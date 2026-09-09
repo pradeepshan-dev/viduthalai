@@ -1,27 +1,7 @@
 /* =========================================================
    VIDUTHALAI — LEADERS
    ---------------------------------------------------------
-   VANILLA JS
-   NO GSAP
-   NO PAGE RELOAD FOR LEADER DETAIL
 
-   FEATURES
-   ---------------------------------------------------------
-   • 15 Prime Ministers
-   • Editorial archive
-   • Contained portraits
-   • Dedicated leader detail
-   • Existing story content
-   • Browser history
-   • Direct URL
-   • Mobile navigation
-   • Auth state
-   • Scroll reveal
-   • Custom cursor
-   • Card tilt
-   • Image preload
-   • Reduced motion
-   • DIRECT CLICK → DETAIL SCROLL
 ========================================================= */
 
 "use strict";
@@ -91,7 +71,7 @@ const leaders = {
         ],
 
         image:
-            "../images//jawaharlal-nehru.jpeg"
+            "../images/jawaharlal-nehru.jpeg"
 
     },
 
@@ -144,7 +124,7 @@ const leaders = {
         ],
 
         image:
-            "../images//leaders/gulzarilal-nanda.jpeg"
+            "../images/Leaders/gulzarilal-nanda.jpeg"
 
     },
 
@@ -201,7 +181,7 @@ const leaders = {
         ],
 
         image:
-            "../images//lal-bahadur-shastri.jpeg"
+            "../images/lal-bahadur-shastri.jpeg"
 
     },
 
@@ -258,7 +238,7 @@ const leaders = {
         ],
 
         image:
-            "../images//leaders/indira-gandhi.jpeg"
+            "../images/Leaders/indira-gandhi.jpeg"
 
     },
 
@@ -313,7 +293,7 @@ const leaders = {
         ],
 
         image:
-            "../images//leaders/morarji-desai.jpeg"
+            "../images/Leaders/morarji-desai.jpeg"
 
     },
 
@@ -368,7 +348,7 @@ const leaders = {
         ],
 
         image:
-            "../images//leaders/charan-singh.jpeg"
+            "../images/Leaders/charan-singh.jpeg"
 
     },
 
@@ -423,7 +403,7 @@ const leaders = {
         ],
 
         image:
-            "../images//leaders/rajiv-gandhi.jpeg"
+            "../images/Leaders/rajiv-gandhi.jpeg"
 
     },
 
@@ -478,7 +458,7 @@ const leaders = {
         ],
 
         image:
-            "../images//leaders/vp-singh-1.jpeg"
+            "../images/Leaders/vp-singh-1.jpeg"
 
     },
 
@@ -533,7 +513,7 @@ const leaders = {
         ],
 
         image:
-            "../images//leaders/chandra-shekhar.jpeg"
+            "../images/Leaders/chandra-shekhar.jpeg"
 
     },
 
@@ -590,7 +570,7 @@ const leaders = {
         ],
 
         image:
-            "../images//leaders/pv-narasimha-rao.jpeg"
+            "../images/Leaders/pv-narasimha-rao.jpeg"
 
     },
 
@@ -649,7 +629,7 @@ const leaders = {
         ],
 
         image:
-            "../images//leaders/atal-bihari-vajpayee.jpeg"
+            "../images/Leaders/atal-bihari-vajpayee.jpeg"
 
     },
 
@@ -702,7 +682,7 @@ const leaders = {
         ],
 
         image:
-            "../images//leaders/hd-deve-gowda.jpeg"
+            "../images/Leaders/hd-deve-gowda.jpeg"
 
     },
 
@@ -757,7 +737,7 @@ const leaders = {
         ],
 
         image:
-            "../images//leaders/ik-gujral.jpeg"
+            "../images/Leaders/ik-gujral.jpeg"
 
     },
 
@@ -818,7 +798,7 @@ const leaders = {
         ],
 
         image:
-            "../images//leaders/manmohan-singh.jpeg"
+            "../images/Leaders/manmohan-singh.jpeg"
 
     },
 
@@ -885,7 +865,7 @@ const leaders = {
         ],
 
         image:
-            "../images//leaders/narendra-modi.jpeg"
+            "../images/Leaders/narendra-modi.jpeg"
 
     }
 
