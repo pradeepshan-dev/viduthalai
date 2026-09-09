@@ -1280,13 +1280,13 @@ function initStoryButtons() {
        Clicking image also opens chapter.
     */
 
-    const images =
+    const images/ =
         document.querySelectorAll(
             ".timeline-image-wrap"
         );
 
 
-    images.forEach(
+    images/.forEach(
         wrapper => {
 
             const event =

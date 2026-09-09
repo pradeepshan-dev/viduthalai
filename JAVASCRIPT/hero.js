@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Mohandas Karamchand Gandhi became one of the most influential leaders of India's struggle for independence. He led major movements including Non-Cooperation, Civil Disobedience and Quit India. The Salt March to Dandi became one of the defining moments of India's freedom struggle.",
 
             image:
-                "../IMAGES/gandhiji.jpeg"
+                "../images//gandhiji.jpeg"
 
         },
 
@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Bhagat Singh became one of the most remembered revolutionary figures of India's freedom struggle. His political writings, fearless actions and willingness to sacrifice his life made him an enduring symbol of resistance to British colonial rule. He was executed by the British in 1931 at the age of 23.",
 
             image:
-                "../IMAGES/bhagatsingh.jpeg"
+                "../images//bhagatsingh.jpeg"
 
         },
 
@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Subhas Chandra Bose was a prominent nationalist leader who pursued an armed struggle against British rule. He became closely associated with the Indian National Army and the Azad Hind movement, leaving a powerful legacy in India's freedom story.",
 
             image:
-                "../IMAGES/subashchandrabose.jpg"
+                "../images//subashchandrabose.jpg"
 
         },
 
@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Rani Lakshmibai became one of the most celebrated figures of the 1857 uprising against the British East India Company. As the Queen of Jhansi, she led her forces in armed resistance and died fighting on the battlefield in 1858.",
 
             image:
-                "../IMAGES/rani-lakshmi-bai-1.jpeg"
+                "../images//rani-lakshmi-bai-1.jpeg"
 
         },
 
@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Jawaharlal Nehru was one of the central leaders of India's independence movement. He participated in major campaigns against British rule and was imprisoned numerous times. After independence, he became India's first Prime Minister.",
 
             image:
-                "../IMAGES/jawaharlal-nehru.jpeg"
+                "../images//jawaharlal-nehru.jpeg"
 
         },
 
@@ -202,7 +202,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Sardar Vallabhbhai Patel played an important role in India's freedom movement and became a prominent leader of the Indian National Congress. His leadership during the Bardoli Satyagraha earned him widespread recognition. After independence, he played a major role in integrating India's princely states.",
 
             image:
-                "../IMAGES/sardar-vallabhbhai-patel.jpeg"
+                "../images//sardar-vallabhbhai-patel.jpeg"
 
         },
 
@@ -231,7 +231,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Chandrashekhar Azad was a prominent revolutionary who dedicated himself to India's struggle against British rule. He vowed that he would never be captured alive. Surrounded by British police at Alfred Park in Allahabad in 1931, he died rather than surrender.",
 
             image:
-                "../IMAGES/chandra-shekar-azad.jpeg"
+                "../images//chandra-shekar-azad.jpeg"
 
         },
 
@@ -260,7 +260,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Sarojini Naidu combined poetry, public leadership and political activism in India's freedom struggle. She participated in the Salt Satyagraha and continued the movement after Gandhi's arrest. She also became the first Indian woman president of the Indian National Congress.",
 
             image:
-                "../IMAGES/sarojini-naidu.jpeg"
+                "../images//sarojini-naidu.jpeg"
 
         },
 
@@ -289,7 +289,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Lal Bahadur Shastri participated in India's freedom movement, including the Non-Cooperation and Quit India movements. He was imprisoned multiple times during the struggle. After independence, he rose to become India's second Prime Minister.",
 
             image:
-                "../IMAGES/lal-bahadur-shastri.jpeg"
+                "../images//lal-bahadur-shastri.jpeg"
 
         },
 
@@ -318,7 +318,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Bal Gangadhar Tilak was one of the earliest leaders to transform Indian nationalism into a mass political movement. His famous call for Swaraj inspired generations of Indians. The British imprisoned him in Mandalay, Burma, where he spent six years.",
 
             image:
-                "../IMAGES/bal-gangadhar-tilak.jpeg"
+                "../images//bal-gangadhar-tilak.jpeg"
 
         },
 
@@ -347,7 +347,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Khudiram Bose joined the revolutionary movement at a very young age. He was arrested following an attempt to attack a British judge and was executed by the British in 1908 at the age of 18. His youth and courage made him an enduring symbol of revolutionary sacrifice.",
 
             image:
-                "../IMAGES/khudiram-bose.jpeg"
+                "../images//khudiram-bose.jpeg"
 
         },
 
@@ -376,7 +376,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "V.O. Chidambaram Pillai was a lawyer, nationalist and entrepreneur who challenged the British shipping monopoly by founding the Swadeshi Steam Navigation Company. He was sentenced to imprisonment and subjected to hard labour, becoming an important symbol of Tamil resistance during the freedom struggle.",
 
             image:
-                "../IMAGES/vo-chidambaram-pillai.jpeg"
+                "../images//vo-chidambaram-pillai.jpeg"
 
         }
 

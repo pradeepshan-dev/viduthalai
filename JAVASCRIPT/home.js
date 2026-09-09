@@ -876,13 +876,13 @@ if (mobileLogoutButton) {
        IMAGE LOAD EFFECT
     ====================================================== */
 
-    const images =
+    const images/ =
         document.querySelectorAll(
             "img"
         );
 
 
-    images.forEach(
+    images/.forEach(
         image => {
 
             image.addEventListener(

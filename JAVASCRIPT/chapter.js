@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             title: "The First Fire",
 
-            image: "../IMAGES/timeline-1857.jpg",
+            image: "../images//timeline-1857.jpg",
 
             lead:
                 "The summer of 1857 began with a silence that would not last. Across northern India, anger that had been building for years finally erupted into rebellion.",
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     name: "Rani Lakshmibai",
                     role: "Queen of Jhansi",
-                    image: "../IMAGES/rani-lakshmi-bai-1.jpeg",
+                    image: "../images//rani-lakshmi-bai-1.jpeg",
 
                     description:
                         "One of the most enduring leaders of the 1857 rebellion, she defended Jhansi and became a powerful symbol of resistance.",
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     name: "Mangal Pandey",
                     role: "Early Spark of Rebellion",
-                    image: "../IMAGES/mangal-pandey.jpg",
+                    image: "../images//mangal-pandey.jpg",
 
                     description:
                         "His resistance at Barrackpore became one of the early sparks associated with the uprising of 1857.",
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     name: "Bahadur Shah Zafar",
                     role: "Symbolic Mughal Emperor",
-                    image: "../IMAGES/bahadur-shah.jpeg",
+                    image: "../images//bahadur-shah.jpeg",
 
                     description:
                         "The ageing Mughal emperor became the symbolic figurehead around whom many rebels attempted to unite.",
@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     name: "Nana Sahib",
                     role: "Leader at Kanpur",
-                    image: "../IMAGES/nana-shahib.jpeg",
+                    image: "../images//nana-shahib.jpeg",
 
                     description:
                         "Nana Sahib emerged as one of the major rebel leaders during the fighting around Kanpur.",
@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     name: "Tantia Tope",
                     role: "Military Commander",
-                    image: "../IMAGES/tantia-tope.jpg",
+                    image: "../images//tantia-tope.jpg",
 
                     description:
                         "A skilled military commander who continued the resistance through campaigns across central India.",
@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             title: "The Rise of Organized Nationalism",
 
-            image: "../IMAGES/timeline-1885.jpg",
+            image: "../images//timeline-1885.jpg",
 
             lead:
                 "A new political platform emerged, giving Indians a national space to articulate their demands for representation and reform.",
@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     name: "Dadabhai Naoroji",
                     role: "Grand Old Man of India",
-                    image: "../IMAGES/dadabhai-naoroji.jpeg",
+                    image: "../images//dadabhai-naoroji.jpeg",
 
                     description:
                         "A pioneering nationalist who exposed the economic consequences of colonial rule through his drain theory.",
@@ -181,7 +181,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     name: "A. O. Hume",
                     role: "Congress Founder",
-                    image: "../IMAGES/ao-hume.jpeg",
+                    image: "../images//ao-hume.jpeg",
 
                     description:
                         "Played a central role in establishing the Indian National Congress in 1885.",
@@ -196,7 +196,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     name: "W. C. Bonnerjee",
                     role: "First Congress President",
-                    image: "../IMAGES/wc-bonnerjee.jpeg",
+                    image: "../images//wc-bonnerjee.jpeg",
 
                     description:
                         "Presided over the first session of the Indian National Congress held in Bombay.",
@@ -226,7 +226,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             title: "Swadeshi & Self-Reliance",
 
-            image: "../IMAGES/timeline-1905.webp",
+            image: "../images//timeline-1905.webp",
 
             lead:
                 "The partition of Bengal transformed political protest into a powerful movement for Swadeshi and economic self-reliance.",
@@ -245,7 +245,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     name: "Bal Gangadhar Tilak",
                     role: "Assertive Nationalist",
-                    image: "../IMAGES/bal-gangadhar-tilak.jpeg",
+                    image: "../images//bal-gangadhar-tilak.jpeg",
 
                     description:
                         "A major nationalist voice who advocated Swaraj and helped turn political nationalism into a mass force.",
@@ -260,7 +260,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     name: "Bipin Chandra Pal",
                     role: "Swadeshi Leader",
-                    image: "../IMAGES/bipin-chandra-pal-1.jpeg",
+                    image: "../images//bipin-chandra-pal-1.jpeg",
 
                     description:
                         "A leading advocate of Swadeshi, boycott and national education during the movement.",
@@ -275,7 +275,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     name: "Lala Lajpat Rai",
                     role: "Punjab Nationalist",
-                    image: "../IMAGES/lala-lajpat-rai.jpeg",
+                    image: "../images//lala-lajpat-rai.jpeg",
 
                     description:
                         "A powerful nationalist leader who became one of the prominent voices of assertive Indian nationalism.",
@@ -305,7 +305,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             title: "A New Era of Leadership",
 
-            image: "../IMAGES/timeline-1915-1.jpg",
+            image: "../images//timeline-1915-1.jpg",
 
             lead:
                 "After years of activism in South Africa, Gandhi returned to India and entered a freedom movement that was about to change dramatically.",
@@ -324,7 +324,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     name: "Mahatma Gandhi",
                     role: "Leader of Mass Resistance",
-                    image: "../IMAGES/gandhi.jpeg",
+                    image: "../images//gandhi.jpeg",
 
                     description:
                         "Gandhi transformed India's freedom struggle through non-violent mass movements and civil disobedience.",
@@ -339,7 +339,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     name: "Rajendra Prasad",
                     role: "Nationalist Leader",
-                    image: "../IMAGES/rajendra-prasad.jpg",
+                    image: "../images//rajendra-prasad.jpg",
 
                     description:
                         "A close associate of Gandhi who became an important Congress leader during India's freedom struggle.",
@@ -369,7 +369,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             title: "Jallianwala Bagh",
 
-            image: "../IMAGES/timeline-1919.jpg",
+            image: "../images//timeline-1919.jpg",
 
             lead:
                 "The events at Jallianwala Bagh shocked India and became a profound turning point in the struggle against colonial rule.",
@@ -388,7 +388,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     name: "Mahatma Gandhi",
                     role: "Nationalist Leader",
-                    image: "../IMAGES/gandhi.jpeg",
+                    image: "../images//gandhi.jpeg",
 
                     description:
                         "The tragedy influenced Gandhi's growing conviction that British rule had to be challenged through mass non-cooperation.",
@@ -403,7 +403,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     name: "Udham Singh",
                     role: "Revolutionary Avenger",
-                    image: "../IMAGES/udham-singh.jpeg",
+                    image: "../images//udham-singh.jpeg",
 
                     description:
                         "Udham Singh carried the memory of the massacre for decades and later assassinated Michael O'Dwyer.",
@@ -433,7 +433,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             title: "Non-Cooperation",
 
-            image: "../IMAGES/timeline-1920.jpeg",
+            image: "../images//timeline-1920.jpeg",
 
             lead:
                 "Millions of Indians were drawn into a movement that challenged British authority through mass non-cooperation.",
@@ -452,7 +452,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     name: "Mahatma Gandhi",
                     role: "Leader of Non-Cooperation",
-                    image: "../IMAGES/gandhi.jpeg",
+                    image: "../images//gandhi.jpeg",
 
                     description:
                         "Gandhi led the movement encouraging Indians to withdraw cooperation from colonial institutions.",
@@ -467,7 +467,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     name: "Ali Brothers",
                     role: "Khilafat Leaders",
-                    image: "../IMAGES/ali-brothers.avif",
+                    image: "../images//ali-brothers.avif",
 
                     description:
                         "The Ali brothers played an important role in connecting the Khilafat cause with the broader nationalist movement.",
@@ -497,7 +497,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             title: "The Salt March",
 
-            image: "../IMAGES/dandi-march-1.jpeg",
+            image: "../images//dandi-march-1.jpeg",
 
             lead:
                 "A simple act involving salt became one of the most powerful symbols of civil disobedience.",
@@ -516,7 +516,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     name: "Mahatma Gandhi",
                     role: "Leader of the Salt March",
-                    image: "../IMAGES/gandhi.jpeg",
+                    image: "../images//gandhi.jpeg",
 
                     description:
                         "Led the 1930 Salt March from Sabarmati Ashram to Dandi, inspiring a nationwide civil disobedience movement.",
@@ -531,7 +531,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     name: "Sarojini Naidu",
                     role: "Leader of Civil Disobedience",
-                    image: "../IMAGES/sarojini-naidu.jpeg",
+                    image: "../images//sarojini-naidu.jpeg",
 
                     description:
                         "A poet, nationalist and Congress leader who played a prominent role in the Salt Satyagraha.",
@@ -561,7 +561,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             title: "Gandhi-Irwin Pact",
 
-            image: "../IMAGES/timeline-1931-1.jpg",
+            image: "../images//timeline-1931-1.jpg",
 
             lead:
                 "Negotiation entered the centre of India's struggle as Gandhi and Lord Irwin attempted to find a political path forward.",
@@ -580,7 +580,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     name: "Mahatma Gandhi",
                     role: "Congress Negotiator",
-                    image: "../IMAGES/gandhi.jpeg",
+                    image: "../images//gandhi.jpeg",
 
                     description:
                         "Represented the Indian National Congress in negotiations with Lord Irwin.",
@@ -595,7 +595,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     name: "Tej Bahadur Sapru",
                     role: "Constitutional Reformer",
-                    image: "../IMAGES/tej-bahadur-sapru-1.jpeg",
+                    image: "../images//tej-bahadur-sapru-1.jpeg",
 
                     description:
                         "An important constitutional thinker who supported dialogue and political reform.",
@@ -625,7 +625,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             title: "Constitutional Change",
 
-            image: "../IMAGES/timeline-1935-1.jpg",
+            image: "../images//timeline-1935-1.jpg",
 
             lead:
                 "A major constitutional reform expanded provincial autonomy and changed the political landscape.",
@@ -644,7 +644,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     name: "Jawaharlal Nehru",
                     role: "Congress Leader",
-                    image: "../IMAGES/jawaharlal-nehru.jpeg",
+                    image: "../images//jawaharlal-nehru.jpeg",
 
                     description:
                         "A leading Congress figure who increasingly advocated complete independence and democratic self-government.",
@@ -659,7 +659,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     name: "Sardar Vallabhbhai Patel",
                     role: "Congress Organizer",
-                    image: "../IMAGES/sardar-vallabhbhai-patel.jpeg",
+                    image: "../images//sardar-vallabhbhai-patel.jpeg",
 
                     description:
                         "A powerful Congress organizer and leader who played a central role in India's political mobilization.",
@@ -689,7 +689,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             title: "Do or Die",
 
-            image: "../IMAGES/timeline-1942.avif",
+            image: "../images//timeline-1942.avif",
 
             lead:
                 "The Quit India Movement demanded an immediate end to British rule and carried the freedom struggle into its final decisive phase.",
@@ -708,7 +708,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     name: "Mahatma Gandhi",
                     role: "Quit India Leader",
-                    image: "../IMAGES/gandhi.jpeg",
+                    image: "../images//gandhi.jpeg",
 
                     description:
                         "Gandhi called for the British to leave India immediately and gave the movement its famous call of Do or Die.",
@@ -723,7 +723,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     name: "Aruna Asaf Ali",
                     role: "Revolutionary Congress Leader",
-                    image: "../IMAGES/aruna-asaf-ali.jpeg",
+                    image: "../images//aruna-asaf-ali.jpeg",
 
                     description:
                         "She became one of the most prominent faces of the underground Quit India Movement.",
@@ -738,7 +738,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     name: "Jayaprakash Narayan",
                     role: "Underground Resistance",
-                    image: "../IMAGES/jayaprakash-narayan.jpg",
+                    image: "../images//jayaprakash-narayan.jpg",
 
                     description:
                         "A major underground leader who helped continue resistance after the Congress leadership was arrested.",
@@ -768,7 +768,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             title: "The Final Years",
 
-            image: "../IMAGES/timeline-1946.jpeg",
+            image: "../images//timeline-1946.jpeg",
 
             lead:
                 "The end of World War II brought growing political pressure, INA trials and unrest within the colonial system.",
@@ -787,7 +787,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     name: "Subhas Chandra Bose",
                     role: "Leader of the INA",
-                    image: "../IMAGES/subashchandrabose.jpg",
+                    image: "../images//subashchandrabose.jpg",
 
                     description:
                         "Bose organized the Indian National Army and sought to challenge British rule through armed struggle.",
@@ -802,7 +802,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     name: "Jawaharlal Nehru",
                     role: "Congress Leader",
-                    image: "../IMAGES/jawaharlal-nehru.jpeg",
+                    image: "../images//jawaharlal-nehru.jpeg",
 
                     description:
                         "A central Congress leader during the final negotiations that preceded independence.",
@@ -817,7 +817,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     name: "Sardar Vallabhbhai Patel",
                     role: "Congress Leader",
-                    image: "../IMAGES/sardar-vallabhbhai-patel.jpeg",
+                    image: "../images//sardar-vallabhbhai-patel.jpeg",
 
                     description:
                         "A major nationalist leader during the final phase of British rule and the transition to independence.",
@@ -847,7 +847,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             title: "Independence",
 
-            image: "../IMAGES/timeline-1947.jpeg",
+            image: "../images//timeline-1947.jpeg",
 
             lead:
                 "After decades of resistance, sacrifice and political struggle, India became an independent nation on 15 August 1947.",
@@ -866,7 +866,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     name: "Mahatma Gandhi",
                     role: "Leader of the Freedom Struggle",
-                    image: "../IMAGES/gandhi.jpeg",
+                    image: "../images//gandhi.jpeg",
 
                     description:
                         "Gandhi's philosophy of non-violence and mass participation became one of the defining forces of India's freedom struggle.",
@@ -881,7 +881,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     name: "Jawaharlal Nehru",
                     role: "First Prime Minister",
-                    image: "../IMAGES/jawaharlal-nehru.jpeg",
+                    image: "../images//jawaharlal-nehru.jpeg",
 
                     description:
                         "India's first Prime Minister led the new nation during its first years of independence.",
@@ -896,7 +896,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     name: "Sardar Vallabhbhai Patel",
                     role: "Iron Man of India",
-                    image: "../IMAGES/sardar-vallabhbhai-patel.jpeg",
+                    image: "../images//sardar-vallabhbhai-patel.jpeg",
 
                     description:
                         "Patel played a crucial role in consolidating the newly independent Indian Union.",
@@ -911,7 +911,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     name: "Rajendra Prasad",
                     role: "First President of India",
-                    image: "../IMAGES/rajendra-prasad.jpg",
+                    image: "../images//rajendra-prasad.jpg",
 
                     description:
                         "A major freedom fighter who later became independent India's first President.",

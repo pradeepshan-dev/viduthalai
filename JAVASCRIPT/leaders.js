@@ -91,7 +91,7 @@ const leaders = {
         ],
 
         image:
-            "../IMAGES/jawaharlal-nehru.jpeg"
+            "../images//jawaharlal-nehru.jpeg"
 
     },
 
@@ -144,7 +144,7 @@ const leaders = {
         ],
 
         image:
-            "../IMAGES/leaders/gulzarilal-nanda.jpeg"
+            "../images//leaders/gulzarilal-nanda.jpeg"
 
     },
 
@@ -201,7 +201,7 @@ const leaders = {
         ],
 
         image:
-            "../IMAGES/lal-bahadur-shastri.jpeg"
+            "../images//lal-bahadur-shastri.jpeg"
 
     },
 
@@ -258,7 +258,7 @@ const leaders = {
         ],
 
         image:
-            "../IMAGES/leaders/indira-gandhi.jpeg"
+            "../images//leaders/indira-gandhi.jpeg"
 
     },
 
@@ -313,7 +313,7 @@ const leaders = {
         ],
 
         image:
-            "../IMAGES/leaders/morarji-desai.jpeg"
+            "../images//leaders/morarji-desai.jpeg"
 
     },
 
@@ -368,7 +368,7 @@ const leaders = {
         ],
 
         image:
-            "../IMAGES/leaders/charan-singh.jpeg"
+            "../images//leaders/charan-singh.jpeg"
 
     },
 
@@ -423,7 +423,7 @@ const leaders = {
         ],
 
         image:
-            "../IMAGES/leaders/rajiv-gandhi.jpeg"
+            "../images//leaders/rajiv-gandhi.jpeg"
 
     },
 
@@ -478,7 +478,7 @@ const leaders = {
         ],
 
         image:
-            "../IMAGES/leaders/vp-singh-1.jpeg"
+            "../images//leaders/vp-singh-1.jpeg"
 
     },
 
@@ -533,7 +533,7 @@ const leaders = {
         ],
 
         image:
-            "../IMAGES/leaders/chandra-shekhar.jpeg"
+            "../images//leaders/chandra-shekhar.jpeg"
 
     },
 
@@ -590,7 +590,7 @@ const leaders = {
         ],
 
         image:
-            "../IMAGES/leaders/pv-narasimha-rao.jpeg"
+            "../images//leaders/pv-narasimha-rao.jpeg"
 
     },
 
@@ -649,7 +649,7 @@ const leaders = {
         ],
 
         image:
-            "../IMAGES/leaders/atal-bihari-vajpayee.jpeg"
+            "../images//leaders/atal-bihari-vajpayee.jpeg"
 
     },
 
@@ -702,7 +702,7 @@ const leaders = {
         ],
 
         image:
-            "../IMAGES/leaders/hd-deve-gowda.jpeg"
+            "../images//leaders/hd-deve-gowda.jpeg"
 
     },
 
@@ -757,7 +757,7 @@ const leaders = {
         ],
 
         image:
-            "../IMAGES/leaders/ik-gujral.jpeg"
+            "../images//leaders/ik-gujral.jpeg"
 
     },
 
@@ -818,7 +818,7 @@ const leaders = {
         ],
 
         image:
-            "../IMAGES/leaders/manmohan-singh.jpeg"
+            "../images//leaders/manmohan-singh.jpeg"
 
     },
 
@@ -885,7 +885,7 @@ const leaders = {
         ],
 
         image:
-            "../IMAGES/leaders/narendra-modi.jpeg"
+            "../images//leaders/narendra-modi.jpeg"
 
     }
 
@@ -3115,7 +3115,7 @@ initializeCardTilt();
    IMAGE PRELOAD
 ========================================================= */
 
-function preloadImages() {
+function preloadimages/() {
 
     Object.values(leaders)
         .forEach(
@@ -3135,7 +3135,7 @@ function preloadImages() {
 
 }
 
-preloadImages();
+preloadimages/();
 
 
 /* =========================================================

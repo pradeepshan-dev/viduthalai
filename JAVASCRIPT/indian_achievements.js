@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Republic of India",
 
             image:
-                "../IMAGES/achievements/republic-1950.avif",
+                "../images//achievements/republic-1950.avif",
 
             lead:
                 "India adopted its Constitution and became a sovereign democratic republic on 26 January 1950.",
@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "The Green Revolution",
 
             image:
-                "../IMAGES/achievements/green-revolution.jpg",
+                "../images//achievements/green-revolution.jpg",
 
             lead:
                 "A transformation in Indian agriculture that helped the nation move towards food security.",
@@ -246,7 +246,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "The White Revolution",
 
             image:
-                "../IMAGES/achievements/white-revolution.jpeg",
+                "../images//achievements/white-revolution.jpeg",
 
             lead:
                 "A nationwide dairy movement transformed milk production and connected millions of rural producers to organized markets.",
@@ -349,7 +349,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Pokhran-I",
 
             image:
-                "../IMAGES/achievements/pokhran-1974.jpg",
+                "../images//achievements/pokhran-1974.jpg",
 
             lead:
                 "India demonstrated its growing nuclear scientific capability with its first peaceful nuclear explosion at Pokhran.",
@@ -450,7 +450,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Aryabhata",
 
             image:
-                "../IMAGES/achievements/aryabhata.jpeg",
+                "../images//achievements/aryabhata.jpeg",
 
             lead:
                 "India's first satellite marked the beginning of a remarkable journey in indigenous space technology.",
@@ -551,7 +551,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "INSAT",
 
             image:
-                "../IMAGES/achievements/insat.webp",
+                "../images//achievements/insat.webp",
 
             lead:
                 "India's INSAT programme transformed communication, broadcasting, meteorology and satellite-based services.",
@@ -652,7 +652,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Pokhran-II",
 
             image:
-                "../IMAGES/achievements/pokhran-1998.jpg",
+                "../images//achievements/pokhran-1998.jpg",
 
             lead:
                 "A series of nuclear tests in 1998 marked a decisive moment in India's strategic and technological history.",
@@ -753,7 +753,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "India's IT Revolution",
 
             image:
-                "../IMAGES/achievements/it-revolution.avif",
+                "../images//achievements/it-revolution.avif",
 
             lead:
                 "India emerged as a global technology and software powerhouse through talent, entrepreneurship and digital innovation.",
@@ -854,7 +854,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Chandrayaan-1",
 
             image:
-                "../IMAGES/achievements/chandrayaan-1.jpeg",
+                "../images//achievements/chandrayaan-1.jpeg",
 
             lead:
                 "India's first lunar mission transformed the country's scientific exploration programme and contributed important discoveries about the Moon.",
@@ -955,7 +955,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Mars Orbiter Mission",
 
             image:
-                "../IMAGES/achievements/mars-orbitter.jpeg",
+                "../images//achievements/mars-orbitter.jpeg",
 
             lead:
                 "India reached Mars on its first attempt with a mission that demonstrated remarkable engineering efficiency and deep-space capability.",
@@ -1058,7 +1058,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Chandrayaan-3",
 
             image:
-                "../IMAGES/achievements/chandrayaan-3.jpeg",
+                "../images//achievements/chandrayaan-3.jpeg",
 
             lead:
                 "India achieved a historic soft landing near the Moon's south polar region and demonstrated advanced lunar exploration capability.",
@@ -1159,7 +1159,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Aditya-L1",
 
             image:
-                "../IMAGES/achievements/aditya-l1.jpeg",
+                "../images//achievements/aditya-l1.jpeg",
 
             lead:
                 "India's first dedicated solar mission opened a new chapter in the study of the Sun and space weather.",
