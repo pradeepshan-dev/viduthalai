@@ -1,0 +1,1664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Viduthalai — India's story of freedom, resistance, sacrifice and independence."
+    >
+
+    <title>Viduthalai | India's Story of Freedom</title>
+
+
+    <!-- =====================================================
+         BOOTSTRAP
+    ====================================================== -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         BOOTSTRAP ICONS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         HOME CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="../CSS/home.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     PAGE LOADER
+========================================================== -->
+
+<div class="page-loader">
+
+    <div class="loader-logo">
+        <span class="loader-symbol">
+            <i class="bi bi-flag-fill"></i>
+        </span>
+
+        <span>VIDUTHALAI</span>
+    </div>
+
+    <div class="loader-line">
+        <span></span>
+    </div>
+
+    <small>
+        A STORY OF FREEDOM
+    </small>
+
+</div>
+
+
+
+<!-- =========================================================
+     CURSOR
+========================================================== -->
+
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+
+
+<!-- =========================================================
+     NAVBAR
+========================================================== -->
+
+<nav class="viduthalai-navbar">
+
+    <div class="nav-inner">
+
+
+        <!-- BRAND -->
+
+        <a
+            href="home.html"
+            class="brand"
+        >
+
+            <span class="brand-symbol">
+                <i class="bi bi-flag-fill"></i>
+            </span>
+
+            <span class="brand-name">
+                VIDUTHALAI
+            </span>
+
+        </a>
+
+
+
+        <!-- DESKTOP NAV -->
+
+        <div class="desktop-navigation">
+
+            <a
+                href="home.html"
+                class="nav-link active"
+            >
+                Home
+            </a>
+
+            <a
+                href="heroes.html"
+                class="nav-link"
+            >
+                Heroes
+            </a>
+
+            <a
+                href="timeline.html"
+                class="nav-link"
+            >
+                Timeline
+            </a>
+
+            <a
+                href="achievements.html"
+                class="nav-link"
+            >
+                Achievements
+            </a>
+
+            <a
+                href="leaders.html"
+                class="nav-link"
+            >
+                Leaders
+            </a>
+
+        </div>
+
+
+
+<!-- =========================================================
+     ACCOUNT / AUTHENTICATION
+========================================================== -->
+
+<div class="navbar-auth" id="navbarAuth">
+
+    <!-- LOGGED OUT -->
+    <div class="auth-logged-out" id="authLoggedOut">
+
+        <a href="auth.html" class="auth-login">
+            Login
+        </a>
+
+        <a href="auth.html" class="auth-signup">
+            Sign Up
+        </a>
+
+    </div>
+
+
+    <!-- LOGGED IN -->
+    <div class="auth-logged-in" id="authLoggedIn">
+
+        <span class="user-display">
+
+            <i class="bi bi-person-circle"></i>
+
+            <span id="navbarUsername">
+                User
+            </span>
+
+        </span>
+
+        <button
+            type="button"
+            class="logout-button"
+            id="logoutButton"
+        >
+            Logout
+        </button>
+
+    </div>
+
+</div>
+
+
+
+
+
+        <!-- MOBILE -->
+
+        <button
+            class="mobile-menu-button"
+            id="mobileMenuButton"
+            type="button"
+            aria-label="Open menu"
+        >
+
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </div>
+
+
+    <!-- MOBILE MENU -->
+
+    <div
+        class="mobile-menu"
+        id="mobileMenu"
+    >
+
+        <a href="home.html">
+            Home
+        </a>
+
+        <a href="heroes.html">
+            Heroes
+        </a>
+
+        <a href="timeline.html">
+            Timeline
+        </a>
+
+        <a href="achievements.html">
+            Achievements
+        </a>
+
+        <a href="leaders.html">
+            Leaders
+        </a>
+
+<!-- MOBILE AUTH -->
+
+<div class="mobile-auth" id="mobileAuth">
+
+    <!-- LOGGED OUT -->
+
+    <div
+        class="mobile-auth-logged-out"
+        id="mobileAuthLoggedOut"
+    >
+
+        <a href="auth.html">
+            Login
+        </a>
+
+        <a href="auth.html">
+            Sign Up
+        </a>
+
+    </div>
+
+
+    <!-- LOGGED IN -->
+
+    <div
+        class="mobile-auth-logged-in"
+        id="mobileAuthLoggedIn"
+    >
+
+        <div class="mobile-user">
+
+            <i class="bi bi-person-circle"></i>
+
+            <span id="mobileNavbarUsername">
+                User
+            </span>
+
+        </div>
+
+        <button
+            type="button"
+            id="mobileLogoutButton"
+            class="mobile-logout"
+        >
+            Logout
+        </button>
+
+    </div>
+
+</div>
+
+
+
+    </div>
+
+</nav>
+
+
+<!-- =========================================================
+     HERO
+========================================================== -->
+
+<header class="cinematic-hero">
+
+
+    <!-- BACKGROUND IMAGE -->
+
+    <div class="hero-background">
+
+        <img
+            src="../IMAGES/timeline-1947.jpeg"
+            alt="India's independence"
+        >
+
+    </div>
+
+
+    <!-- DARK OVERLAY -->
+
+    <div class="hero-overlay"></div>
+
+
+    <!-- GRAIN -->
+
+    <div class="hero-grain"></div>
+
+
+    <!-- GOLD GLOW -->
+
+    <div class="hero-glow"></div>
+
+
+    <!-- FLOATING PARTICLES -->
+
+    <div class="hero-particles">
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+
+
+    <div class="container">
+
+        <div class="hero-layout">
+
+
+            <!-- LEFT -->
+
+            <div class="hero-content reveal">
+
+
+                <div class="hero-kicker">
+
+                    <span></span>
+
+                    INDIA
+                    <b>•</b>
+                    1857
+                    <b>•</b>
+                    1947
+
+                </div>
+
+
+                <div class="hero-small-title">
+                    THE STORY OF
+                </div>
+
+
+                <h1>
+
+                    A freedom
+
+                    <em>
+                        remembered.
+                    </em>
+
+                    <br>
+
+                    A story
+
+                    <em>
+                        never forgotten.
+                    </em>
+
+                </h1>
+
+
+                <p class="hero-description">
+
+                    Discover the people, sacrifices,
+                    movements and defining moments
+                    that shaped India's journey to
+                    independence.
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="timeline.html"
+                        class="gold-button magnetic"
+                    >
+
+                        <span>
+                            Explore the journey
+                        </span>
+
+                        <i class="bi bi-arrow-up-right"></i>
+
+                    </a>
+
+
+                    <a
+                        href="heroes.html"
+                        class="text-button magnetic"
+                    >
+
+                        Meet the heroes
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- HERO STATS -->
+
+                <div class="hero-stats">
+
+                    <div>
+
+                        <strong>
+                            1857
+                        </strong>
+
+                        <span>
+                            First major uprising
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat-line"></div>
+
+
+                    <div>
+
+                        <strong>
+                            1947
+                        </strong>
+
+                        <span>
+                            Independence
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat-line"></div>
+
+
+                    <div>
+
+                        <strong>
+                            15 AUG
+                        </strong>
+
+                        <span>
+                            A historic day
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- RIGHT ART -->
+
+            <div class="hero-art reveal">
+
+
+                <div class="art-year">
+
+                    <span>
+                        15
+                    </span>
+
+                    <small>
+                        AUGUST
+                    </small>
+
+                    <span>
+                        1947
+                    </span>
+
+                </div>
+
+
+                <div class="art-circle">
+
+                    <div class="circle-ring ring-one"></div>
+                    <div class="circle-ring ring-two"></div>
+
+                    <div class="ashoka-wheel">
+
+                        <span></span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="art-quote">
+
+                    <i class="bi bi-quote"></i>
+
+                    <p>
+                        Freedom is never given;
+                        it is earned through courage.
+                    </p>
+
+                </div>
+
+
+                <div class="art-number">
+                    01
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- SCROLL -->
+
+    <a
+        href="#intro"
+        class="hero-scroll"
+    >
+
+        <span>
+            SCROLL TO DISCOVER
+        </span>
+
+        <i class="bi bi-arrow-down"></i>
+
+    </a>
+
+
+    <div class="hero-bottom-line"></div>
+
+</header>
+
+
+
+<!-- =========================================================
+     INTRO
+========================================================== -->
+
+<section
+    class="intro-section"
+    id="intro"
+>
+
+    <div class="container">
+
+        <div class="intro-grid">
+
+
+            <div class="reveal">
+
+                <span class="eyebrow">
+                    THE STORY OF VIDUTHALAI
+                </span>
+
+                <h2 class="display-title">
+
+                    Freedom was not
+
+                    <em>
+                        one moment.
+                    </em>
+
+                    It was a movement.
+
+                </h2>
+
+            </div>
+
+
+            <div class="intro-side reveal">
+
+                <div class="vertical-line"></div>
+
+                <p>
+
+                    For generations, Indians challenged
+                    colonial rule through resistance,
+                    reform, sacrifice and mass movements.
+
+                    Viduthalai brings these stories together
+                    so they can be explored, understood
+                    and remembered.
+
+                </p>
+
+
+                <a
+                    href="timeline.html"
+                    class="minimal-link"
+                >
+
+                    Explore India's journey
+
+                    <i class="bi bi-arrow-up-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     TIMELINE
+========================================================== -->
+
+<section class="timeline-section">
+
+    <div class="container">
+
+
+        <div class="section-heading reveal">
+
+            <div>
+
+                <span class="eyebrow">
+                    A LONG ROAD TO FREEDOM
+                </span>
+
+                <h2>
+                    Four moments.
+                    <em>
+                        One journey.
+                    </em>
+                </h2>
+
+            </div>
+
+
+            <a
+                href="timeline.html"
+                class="outline-button"
+            >
+
+                Complete timeline
+
+                <i class="bi bi-arrow-up-right"></i>
+
+            </a>
+
+        </div>
+
+
+
+        <div class="timeline-track">
+
+
+            <!-- EVENT -->
+
+            <article
+                class="timeline-item reveal"
+                data-year="1857"
+            >
+
+                <div class="timeline-year">
+                    1857
+                </div>
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-card">
+
+                    <span>
+                        THE UPRISING
+                    </span>
+
+                    <h3>
+                        Revolt of 1857
+                    </h3>
+
+                    <p>
+                        A major uprising against British
+                        rule spread across several parts
+                        of India.
+                    </p>
+
+                    <a href="chapter.html?chapter=1857">
+
+                        Explore chapter
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- EVENT -->
+
+            <article
+                class="timeline-item reveal"
+                data-year="1885"
+            >
+
+                <div class="timeline-year">
+                    1885
+                </div>
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-card">
+
+                    <span>
+                        NATIONALISM
+                    </span>
+
+                    <h3>
+                        Organized nationalism
+                    </h3>
+
+                    <p>
+                        The formation of the Indian National
+                        Congress gave the emerging nationalist
+                        movement a major platform.
+                    </p>
+
+                    <a href="chapter.html?chapter=1885">
+
+                        Explore chapter
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- EVENT -->
+
+            <article
+                class="timeline-item reveal"
+                data-year="1919"
+            >
+
+                <div class="timeline-year">
+                    1919
+                </div>
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-card">
+
+                    <span>
+                        MASS RESISTANCE
+                    </span>
+
+                    <h3>
+                        The struggle reaches millions
+                    </h3>
+
+                    <p>
+                        National movements increasingly
+                        involved ordinary citizens across
+                        regions and communities.
+                    </p>
+
+                    <a href="chapter.html?chapter=1919">
+
+                        Explore chapter
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- EVENT -->
+
+            <article
+                class="timeline-item reveal"
+                data-year="1942"
+            >
+
+                <div class="timeline-year">
+                    1942
+                </div>
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-card">
+
+                    <span>
+                        QUIT INDIA
+                    </span>
+
+                    <h3>
+                        "Do or Die"
+                    </h3>
+
+                    <p>
+                        The Quit India Movement demanded
+                        an immediate end to British rule.
+                    </p>
+
+                    <a href="chapter.html?chapter=1942">
+
+                        Explore chapter
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- FINAL -->
+
+            <article
+                class="timeline-item final-timeline reveal"
+                data-year="1947"
+            >
+
+                <div class="timeline-year">
+                    1947
+                </div>
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-card">
+
+                    <span>
+                        INDEPENDENCE
+                    </span>
+
+                    <h3>
+                        A new nation
+                    </h3>
+
+                    <p>
+                        On 15 August 1947, India became
+                        independent after decades of struggle.
+                    </p>
+
+                    <a href="chapter.html?chapter=1947">
+
+                        Explore chapter
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     NUMBERS
+========================================================== -->
+
+<section class="numbers-section">
+
+    <div class="container">
+
+        <div class="numbers-grid">
+
+
+            <div class="number-block reveal">
+
+                <strong
+                    class="counter"
+                    data-target="90"
+                >
+                    0
+                </strong>
+
+                <span>
+                    YEARS OF ORGANIZED STRUGGLE
+                </span>
+
+            </div>
+
+
+            <div class="number-block reveal">
+
+                <strong>
+                    1857
+                </strong>
+
+                <span>
+                    HISTORIC UPRISING
+                </span>
+
+            </div>
+
+
+            <div class="number-block reveal">
+
+                <strong>
+                    1947
+                </strong>
+
+                <span>
+                    INDEPENDENCE
+                </span>
+
+            </div>
+
+
+            <div class="number-block reveal">
+
+                <strong>
+                    12+
+                </strong>
+
+                <span>
+                    REMARKABLE HEROES
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     HEROES
+========================================================== -->
+
+<section class="heroes-section">
+
+    <div class="container">
+
+
+        <div class="section-heading reveal">
+
+            <div>
+
+                <span class="eyebrow">
+                    PEOPLE WHO CHANGED HISTORY
+                </span>
+
+                <h2>
+
+                    The faces
+
+                    <em>
+                        behind freedom.
+                    </em>
+
+                </h2>
+
+            </div>
+
+
+            <a
+                href="heroes.html"
+                class="outline-button"
+            >
+
+                Meet all heroes
+
+                <i class="bi bi-arrow-up-right"></i>
+
+            </a>
+
+        </div>
+
+
+
+        <div class="heroes-grid">
+
+
+            <!-- GANDHI -->
+
+            <article class="hero-card reveal">
+
+                <div class="hero-card-image">
+
+                    <img
+                        src="../IMAGES/gandhiji.jpeg"
+                        alt="Mahatma Gandhi"
+                    >
+
+                    <span class="hero-card-number">
+                        01
+                    </span>
+
+                    <div class="hero-card-overlay"></div>
+
+                </div>
+
+
+                <div class="hero-card-info">
+
+                    <span>
+                        1869 — 1948
+                    </span>
+
+                    <h3>
+                        Mahatma Gandhi
+                    </h3>
+
+                    <p>
+                        Advocate of non-violent resistance
+                        and a central figure in India's
+                        independence movement.
+                    </p>
+
+                    <a href="heroes.html">
+
+                        Read his story
+
+                        <i class="bi bi-arrow-up-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- BHAGAT -->
+
+            <article class="hero-card reveal">
+
+                <div class="hero-card-image">
+
+                    <img
+                        src="../IMAGES/bhagatsingh.jpeg"
+                        alt="Bhagat Singh"
+                    >
+
+                    <span class="hero-card-number">
+                        02
+                    </span>
+
+                    <div class="hero-card-overlay"></div>
+
+                </div>
+
+
+                <div class="hero-card-info">
+
+                    <span>
+                        1907 — 1931
+                    </span>
+
+                    <h3>
+                        Bhagat Singh
+                    </h3>
+
+                    <p>
+                        Revolutionary whose courage,
+                        ideas and sacrifice made him
+                        an enduring symbol of resistance.
+                    </p>
+
+                    <a href="heroes.html">
+
+                        Read his story
+
+                        <i class="bi bi-arrow-up-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- BOSE -->
+
+            <article class="hero-card reveal">
+
+                <div class="hero-card-image">
+
+                    <img
+                        src="../IMAGES/subashchandrabose.jpg"
+                        alt="Subhas Chandra Bose"
+                    >
+
+                    <span class="hero-card-number">
+                        03
+                    </span>
+
+                    <div class="hero-card-overlay"></div>
+
+                </div>
+
+
+                <div class="hero-card-info">
+
+                    <span>
+                        1897 — 1945
+                    </span>
+
+                    <h3>
+                        Subhas Chandra Bose
+                    </h3>
+
+                    <p>
+                        Nationalist leader associated
+                        with the Indian National Army
+                        and the Azad Hind movement.
+                    </p>
+
+                    <a href="heroes.html">
+
+                        Read his story
+
+                        <i class="bi bi-arrow-up-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+
+        <div class="center-action reveal">
+
+            <a
+                href="heroes.html"
+                class="dark-button"
+            >
+
+                Explore all heroes
+
+                <i class="bi bi-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CINEMATIC QUOTE
+========================================================== -->
+
+<section class="quote-section">
+
+    <div class="quote-bg">
+
+        <img
+            src="../IMAGES/timeline-1942.avif"
+            alt=""
+        >
+
+    </div>
+
+    <div class="quote-overlay"></div>
+
+
+    <div class="container">
+
+        <div class="quote-content reveal">
+
+            <div class="quote-mark">
+                “
+            </div>
+
+            <span class="eyebrow light">
+                A STORY WORTH REMEMBERING
+            </span>
+
+            <blockquote>
+
+                They fought for a freedom
+                <em>
+                    we inherited.
+                </em>
+
+            </blockquote>
+
+            <p>
+
+                Remembering history is not about
+                remaining in the past. It is about
+                understanding the courage that made
+                our present possible.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     AFTER 1947
+========================================================== -->
+
+<section class="future-section">
+
+    <div class="container">
+
+        <div class="future-layout">
+
+
+            <div class="future-copy reveal">
+
+                <span class="eyebrow">
+                    AFTER 1947
+                </span>
+
+                <h2>
+
+                    Freedom was
+
+                    <em>
+                        the beginning.
+                    </em>
+
+                </h2>
+
+                <p>
+
+                    India's story continued long after
+                    independence. The country built new
+                    institutions, explored space, advanced
+                    science, embraced technology and
+                    competed on the world's biggest
+                    sporting stages.
+
+                </p>
+
+                <a
+                    href="achievements.html"
+                    class="dark-button"
+                >
+
+                    Explore India's progress
+
+                    <i class="bi bi-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+
+
+            <div class="future-grid reveal">
+
+
+                <div class="future-card">
+
+                    <div class="future-icon">
+                        <i class="bi bi-rocket-takeoff"></i>
+                    </div>
+
+                    <span>
+                        01
+                    </span>
+
+                    <h3>
+                        Space
+                    </h3>
+
+                    <p>
+                        Reaching beyond Earth.
+                    </p>
+
+                </div>
+
+
+                <div class="future-card">
+
+                    <div class="future-icon">
+                        <i class="bi bi-cpu"></i>
+                    </div>
+
+                    <span>
+                        02
+                    </span>
+
+                    <h3>
+                        Technology
+                    </h3>
+
+                    <p>
+                        Building a digital future.
+                    </p>
+
+                </div>
+
+
+                <div class="future-card">
+
+                    <div class="future-icon">
+                        <i class="bi bi-lightbulb"></i>
+                    </div>
+
+                    <span>
+                        03
+                    </span>
+
+                    <h3>
+                        Science
+                    </h3>
+
+                    <p>
+                        Creating new possibilities.
+                    </p>
+
+                </div>
+
+
+                <div class="future-card">
+
+                    <div class="future-icon">
+                        <i class="bi bi-trophy"></i>
+                    </div>
+
+                    <span>
+                        04
+                    </span>
+
+                    <h3>
+                        Sports
+                    </h3>
+
+                    <p>
+                        Inspiring generations.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FINAL CTA
+========================================================== -->
+
+<section class="final-section">
+
+    <div class="final-orb orb-one"></div>
+    <div class="final-orb orb-two"></div>
+
+    <div class="container">
+
+        <div class="final-content reveal">
+
+            <span class="eyebrow light">
+                BEGIN YOUR JOURNEY
+            </span>
+
+            <h2>
+
+                There is more
+
+                <br>
+
+                <em>
+                    to remember.
+                </em>
+
+            </h2>
+
+            <p>
+
+                Explore the heroes, events and stories
+                that shaped India's journey to freedom.
+
+            </p>
+
+
+            <div class="final-actions">
+
+                <a
+                    href="timeline.html"
+                    class="light-button"
+                >
+
+                    Explore Timeline
+
+                    <i class="bi bi-arrow-right"></i>
+
+                </a>
+
+
+                <a
+                    href="heroes.html"
+                    class="light-outline-button"
+                >
+
+                    Meet the Heroes
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================== -->
+
+<footer class="professional-footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+
+            <div class="footer-main">
+
+                <a
+                    href="home.html"
+                    class="footer-brand"
+                >
+
+                    <i class="bi bi-flag-fill"></i>
+
+                    VIDUTHALAI
+
+                </a>
+
+
+                <p>
+
+                    A digital space dedicated to remembering
+                    India's journey to freedom, honouring
+                    those who shaped it and understanding
+                    the story behind independence.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Explore
+                </h4>
+
+                <a href="home.html">
+                    Home
+                </a>
+
+                <a href="heroes.html">
+                    Heroes
+                </a>
+
+                <a href="timeline.html">
+                    Timeline
+                </a>
+
+                <a href="leaders.html">
+                    Leaders
+                </a>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Discover
+                </h4>
+
+                <a href="achievements.html">
+                    Achievements
+                </a>
+
+                <a href="heroes.html">
+                    Freedom Fighters
+                </a>
+
+                <a href="timeline.html">
+                    Freedom Story
+                </a>
+
+                <a href="auth.html">
+                    Account
+                </a>
+
+            </div>
+
+
+
+            <div class="footer-column footer-memory">
+
+                <h4>
+                    Remember
+                </h4>
+
+                <p>
+
+                    “A nation remembers
+                    when its people choose
+                    not to forget.”
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="footer-bottom">
+
+            <span>
+
+                ©
+                <span id="currentYear"></span>
+                Viduthalai
+
+            </span>
+
+            <span>
+                Built with respect,
+                remembrance and pride.
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================================================
+     BOOTSTRAP
+========================================================== -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+></script>
+
+
+<!-- =========================================================
+     MAIN JS
+========================================================== -->
+
+<script src="../JAVASCRIPT/home.js"></script>
+
+
+</body>
+</html>

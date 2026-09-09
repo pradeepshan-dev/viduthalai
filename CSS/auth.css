@@ -1,0 +1,739 @@
+/* =========================================================
+   VIDUTHALAI
+   AUTHENTICATION
+   LOGIN + SIGNUP
+========================================================= */
+
+:root {
+
+    --black: #050608;
+    --black-2: #090b10;
+    --black-3: #0e1117;
+
+    --cream: #eee8dc;
+    --cream-soft: #c9c5bc;
+
+    --gold: #d4a94f;
+    --gold-light: #edcf7a;
+
+    --muted: #777b82;
+
+    --line: rgba(255,255,255,.10);
+
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    background: var(--black);
+
+    color: var(--cream);
+
+    font-family: "Inter", sans-serif;
+
+    min-height: 100vh;
+
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.auth-page {
+
+    min-height: 100vh;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px 20px;
+
+    overflow: hidden;
+
+}
+
+
+/* =========================================================
+   BACKGROUND
+========================================================= */
+
+.auth-background {
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            rgba(5,6,8,.60),
+            rgba(5,6,8,.94)
+        ),
+        url("../images/india-gate-3.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    filter: grayscale(100%);
+
+    transform: scale(1.05);
+
+}
+
+
+.auth-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(212,169,79,.10),
+            transparent 45%
+        );
+
+    pointer-events: none;
+
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.auth-card {
+
+    width: min(460px, 100%);
+
+    position: relative;
+
+    z-index: 2;
+
+    padding: 48px 42px;
+
+    background:
+        rgba(9,11,16,.92);
+
+    border: 1px solid var(--line);
+
+    box-shadow:
+        0 30px 100px rgba(0,0,0,.65);
+
+    backdrop-filter: blur(18px);
+
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.auth-logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: var(--gold);
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    font-weight: 600;
+
+    margin-bottom: 45px;
+
+}
+
+
+.logo-mark {
+
+    font-size: 9px;
+
+    color: var(--gold-light);
+
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.auth-heading {
+
+    margin-bottom: 30px;
+
+}
+
+
+.eyebrow {
+
+    display: block;
+
+    color: var(--gold);
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 13px;
+
+}
+
+
+.auth-heading h1 {
+
+    font-family: "DM Serif Display", serif;
+
+    font-size: clamp(38px, 7vw, 52px);
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    margin-bottom: 14px;
+
+}
+
+
+.auth-heading p {
+
+    color: var(--cream-soft);
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   SWITCH
+========================================================= */
+
+.auth-switch {
+
+    display: flex;
+
+    border-bottom: 1px solid var(--line);
+
+    margin-bottom: 30px;
+
+}
+
+
+.switch-btn {
+
+    flex: 1;
+
+    background: transparent;
+
+    border: none;
+
+    color: var(--muted);
+
+    padding: 15px 10px;
+
+    cursor: pointer;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    position: relative;
+
+}
+
+
+.switch-btn.active {
+
+    color: var(--cream);
+
+}
+
+
+.switch-btn.active::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: -1px;
+
+    height: 2px;
+
+    background: var(--gold);
+
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.auth-form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+}
+
+
+.auth-form.hidden {
+
+    display: none;
+
+}
+
+
+.field {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+}
+
+
+.field label {
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    color: var(--gold);
+
+}
+
+
+.field input {
+
+    width: 100%;
+
+    padding: 15px 14px;
+
+    background: rgba(255,255,255,.025);
+
+    border: 1px solid rgba(255,255,255,.10);
+
+    color: var(--cream);
+
+    outline: none;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    transition: .3s ease;
+
+}
+
+
+.field input::placeholder {
+
+    color: #5f6268;
+
+}
+
+
+.field input:focus {
+
+    border-color: rgba(212,169,79,.65);
+
+    background: rgba(212,169,79,.03);
+
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.auth-submit {
+
+    margin-top: 8px;
+
+    width: 100%;
+
+    border: none;
+
+    padding: 16px 18px;
+
+    background: var(--gold);
+
+    color: #080808;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+
+}
+
+
+.auth-submit:hover {
+
+    background: var(--gold-light);
+
+    transform: translateY(-2px);
+
+}
+
+
+/* =========================================================
+   MESSAGE
+========================================================= */
+
+.auth-message {
+
+    min-height: 20px;
+
+    margin-top: 18px;
+
+    text-align: center;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+
+}
+
+
+.auth-message.error {
+
+    color: #d88989;
+
+}
+
+
+.auth-message.success {
+
+    color: var(--gold-light);
+
+}
+
+
+/* =========================================================
+   HOME
+========================================================= */
+
+.back-home {
+
+    display: block;
+
+    text-align: center;
+
+    margin-top: 28px;
+
+    color: var(--muted);
+
+    text-decoration: none;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    transition: .3s ease;
+
+}
+
+
+.back-home:hover {
+
+    color: var(--gold);
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 520px) {
+
+    .auth-page {
+
+        padding: 20px 15px;
+
+    }
+
+    .auth-card {
+
+        padding: 35px 24px;
+
+    }
+
+    .auth-logo {
+
+        margin-bottom: 35px;
+
+    }
+
+}
+
+/* =========================================================
+   AUTH NAVIGATION
+========================================================= */
+
+.nav-auth {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+/* LOGIN */
+
+#loginLink {
+    color: var(--cream);
+    text-decoration: none;
+
+    font-size: 11px;
+    letter-spacing: 2px;
+
+    transition: .3s ease;
+}
+
+#loginLink:hover {
+    color: var(--gold);
+}
+
+
+/* =========================================================
+   USER MENU
+========================================================= */
+
+.user-menu {
+    position: relative;
+    display: none;
+}
+
+
+/* USER NAME */
+
+.user-name {
+    border: 0;
+    background: transparent;
+
+    color: var(--gold-light);
+
+    font-family: inherit;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+
+    padding: 8px 0;
+
+    transition: .3s ease;
+}
+
+.user-name:hover {
+    color: var(--cream);
+}
+
+
+/* =========================================================
+   DROPDOWN
+========================================================= */
+
+.user-dropdown {
+
+    position: absolute;
+
+    top: calc(100% + 14px);
+
+    right: 0;
+
+    width: 210px;
+
+    padding: 18px;
+
+    background: rgba(9, 11, 16, .97);
+
+    border: 1px solid rgba(212, 169, 79, .25);
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.5);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform:
+        translateY(-8px);
+
+    transition:
+        opacity .25s ease,
+        transform .25s ease,
+        visibility .25s ease;
+
+    z-index: 1000;
+}
+
+
+/* OPEN */
+
+.user-menu.open .user-dropdown {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform:
+        translateY(0);
+
+}
+
+
+/* =========================================================
+   WELCOME
+========================================================= */
+
+.user-welcome {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+    padding-bottom: 15px;
+
+    margin-bottom: 12px;
+
+    border-bottom:
+        1px solid rgba(255,255,255,.08);
+}
+
+
+.user-welcome span {
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    color: var(--gold);
+
+}
+
+
+.user-welcome strong {
+
+    font-family:
+        "DM Serif Display",
+        serif;
+
+    font-size: 21px;
+
+    font-weight: 400;
+
+    color: var(--cream);
+
+    word-break: break-word;
+}
+
+
+/* =========================================================
+   LOGOUT
+========================================================= */
+
+#logoutBtn {
+
+    width: 100%;
+
+    border: 1px solid
+        rgba(212,169,79,.25);
+
+    background: transparent;
+
+    color: var(--cream);
+
+    padding: 11px;
+
+    font-family: inherit;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+}
+
+
+#logoutBtn:hover {
+
+    background: var(--gold);
+
+    color: #080808;
+
+    border-color: var(--gold);
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .user-dropdown {
+
+        right: -10px;
+
+    }
+
+}

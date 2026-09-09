@@ -1,0 +1,2070 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Explore India's journey to independence through the Viduthalai historical timeline."
+    >
+
+    <title>Timeline | Viduthalai</title>
+
+
+    <!-- =====================================================
+         BOOTSTRAP
+    ====================================================== -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         BOOTSTRAP ICONS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+
+    <!-- =====================================================
+         FONTS
+    ====================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         TIMELINE CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="../CSS/timeline.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     PAGE LOADER
+========================================================= -->
+
+<div
+    class="page-loader"
+    id="pageLoader"
+    aria-hidden="true"
+>
+
+    <div class="loader-orbit"></div>
+
+    <div class="loader-symbol">
+        <i class="bi bi-flag-fill"></i>
+    </div>
+
+    <div class="loader-logo">
+        VIDUTHALAI
+    </div>
+
+    <div class="loader-line">
+        <span></span>
+    </div>
+
+    <div class="loader-subtitle">
+        THE ROAD TO FREEDOM
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     SKIP LINK
+========================================================= -->
+
+<a
+    href="#timeline"
+    class="skip-link"
+>
+    Skip to timeline
+</a>
+
+
+<!-- =========================================================
+     NAVBAR
+========================================================= -->
+
+<nav
+    class="viduthalai-navbar"
+    id="mainNavbar"
+>
+
+    <div class="nav-inner">
+
+
+        <!-- BRAND -->
+
+        <a
+            href="home.html"
+            class="brand"
+            aria-label="Viduthalai Home"
+        >
+
+            <span class="brand-symbol">
+                <i
+                    class="bi bi-flag-fill"
+                    aria-hidden="true"
+                ></i>
+            </span>
+
+            <span class="brand-name">
+                VIDUTHALAI
+            </span>
+
+        </a>
+
+
+        <!-- =================================================
+             CENTER NAVIGATION
+        ================================================== -->
+
+        <div class="desktop-navigation">
+
+            <a href="home.html">
+                Home
+            </a>
+
+            <a href="heroes.html">
+                Heroes
+            </a>
+
+            <a
+                href="timeline.html"
+                class="active"
+                aria-current="page"
+            >
+                Timeline
+            </a>
+
+            <a href="achievements.html">
+                Achievements
+            </a>
+
+            <a href="leaders.html">
+                Leaders
+            </a>
+
+        </div>
+
+
+        <!-- =================================================
+             DESKTOP AUTH
+        ================================================== -->
+
+        <div class="desktop-auth">
+
+            <div
+                id="authLoggedOut"
+                class="auth-state"
+            >
+
+                <a
+                    href="auth.html"
+                    class="nav-account"
+                >
+
+                    <i
+                        class="bi bi-person"
+                        aria-hidden="true"
+                    ></i>
+
+                    <span>
+                        Account
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <div
+                id="authLoggedIn"
+                class="auth-state"
+            >
+
+                <span class="user-label">
+
+                    <i
+                        class="bi bi-person-circle"
+                        aria-hidden="true"
+                    ></i>
+
+                    <span id="navbarUsername">
+                        User
+                    </span>
+
+                </span>
+
+                <button
+                    type="button"
+                    id="logoutButton"
+                    class="logout-button"
+                >
+                    Logout
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             MOBILE MENU BUTTON
+        ================================================== -->
+
+        <button
+            type="button"
+            class="mobile-menu-button"
+            id="mobileMenuButton"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+        >
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </div>
+
+
+    <!-- =====================================================
+         MOBILE MENU
+    ====================================================== -->
+
+    <div
+        class="mobile-menu"
+        id="mobileMenu"
+    >
+
+        <a href="home.html">
+            Home
+        </a>
+
+        <a href="heroes.html">
+            Heroes
+        </a>
+
+        <a
+            href="timeline.html"
+            class="active"
+        >
+            Timeline
+        </a>
+
+        <a href="achievements.html">
+            Achievements
+        </a>
+
+        <a href="leaders.html">
+            Leaders
+        </a>
+
+
+        <div class="mobile-auth">
+
+            <div
+                id="mobileAuthLoggedOut"
+                class="mobile-auth-state"
+            >
+
+                <a href="auth.html">
+
+                    <i class="bi bi-person"></i>
+
+                    Account
+
+                </a>
+
+            </div>
+
+
+            <div
+                id="mobileAuthLoggedIn"
+                class="mobile-auth-state"
+            >
+
+                <span>
+
+                    <i class="bi bi-person-circle"></i>
+
+                    <span id="mobileNavbarUsername">
+                        User
+                    </span>
+
+                </span>
+
+                <button
+                    type="button"
+                    id="mobileLogoutButton"
+                >
+                    Logout
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<header class="timeline-hero">
+
+
+    <div
+        class="timeline-hero-overlay"
+        aria-hidden="true"
+    ></div>
+
+
+    <div
+        class="timeline-gate"
+        aria-hidden="true"
+    >
+
+        <img
+            src="../images/india-gate-3.png"
+            class="hero-gate-image"
+            alt=""
+            fetchpriority="high"
+        >
+
+    </div>
+
+
+    <div
+        class="gate-glow"
+        aria-hidden="true"
+    ></div>
+
+
+    <div
+        class="hero-particles"
+        aria-hidden="true"
+    ></div>
+
+
+    <div class="container">
+
+        <div class="timeline-hero-content">
+
+            <span class="hero-kicker">
+
+                <span></span>
+
+                THE ROAD TO FREEDOM
+
+            </span>
+
+
+            <h1>
+
+                From resistance
+
+                <em>
+                    to freedom.
+                </em>
+
+            </h1>
+
+
+            <p>
+
+                India's independence was not achieved
+                in a single moment. It was shaped by
+                generations of resistance, movements,
+                sacrifices and an unbreakable desire
+                to be free.
+
+            </p>
+
+
+            <div class="hero-meta">
+
+                <div class="hero-stat">
+
+                    <strong>
+                        1857
+                    </strong>
+
+                    <span>
+                        First major uprising
+                    </span>
+
+                </div>
+
+
+                <div class="hero-stat">
+
+                    <strong>
+                        90
+                    </strong>
+
+                    <span>
+                        Years of struggle
+                    </span>
+
+                </div>
+
+
+                <div class="hero-stat">
+
+                    <strong>
+                        1947
+                    </strong>
+
+                    <span>
+                        Independence
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <button
+        type="button"
+        class="hero-scroll"
+        aria-label="Scroll to timeline"
+    >
+
+        <span>
+            SCROLL TO EXPLORE
+        </span>
+
+        <i class="bi bi-arrow-down"></i>
+
+    </button>
+
+
+    <div
+        class="hero-bottom-line"
+        aria-hidden="true"
+    ></div>
+
+</header>
+
+
+<!-- =========================================================
+     INTRO
+========================================================= -->
+
+<section class="timeline-intro">
+
+    <div class="container">
+
+        <div class="intro-grid">
+
+            <div>
+
+                <span class="section-kicker">
+                    A NATION'S STORY
+                </span>
+
+                <h2>
+
+                    Every year carried
+
+                    <span>
+                        a chapter.
+                    </span>
+
+                </h2>
+
+            </div>
+
+
+            <div>
+
+                <p>
+
+                    Follow the moments that changed
+                    India's political landscape, brought
+                    millions into the freedom movement,
+                    and ultimately transformed a colony
+                    into an independent nation.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FILTER NAVIGATION
+========================================================= -->
+
+<section
+    class="timeline-navigation"
+    id="timelineNavigation"
+>
+
+    <div class="container">
+
+        <div class="timeline-nav-header">
+
+            <div>
+
+                <span class="section-kicker">
+                    EXPLORE THE ERA
+                </span>
+
+                <h2>
+                    Choose a chapter
+                </h2>
+
+            </div>
+
+
+            <div class="timeline-count">
+
+                <strong id="eventCount">
+                    12
+                </strong>
+
+                <span>
+                    EVENTS
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="filter-wrapper"
+            role="tablist"
+            aria-label="Timeline categories"
+        >
+
+            <button
+                type="button"
+                class="timeline-filter active"
+                data-filter="all"
+                aria-selected="true"
+            >
+                All
+            </button>
+
+            <button
+                type="button"
+                class="timeline-filter"
+                data-filter="resistance"
+                aria-selected="false"
+            >
+                Early Resistance
+            </button>
+
+            <button
+                type="button"
+                class="timeline-filter"
+                data-filter="national"
+                aria-selected="false"
+            >
+                National Movement
+            </button>
+
+            <button
+                type="button"
+                class="timeline-filter"
+                data-filter="mass"
+                aria-selected="false"
+            >
+                Mass Movements
+            </button>
+
+            <button
+                type="button"
+                class="timeline-filter"
+                data-filter="political"
+                aria-selected="false"
+            >
+                Political Change
+            </button>
+
+            <button
+                type="button"
+                class="timeline-filter"
+                data-filter="final"
+                aria-selected="false"
+            >
+                Final Years
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     TIMELINE
+========================================================= -->
+
+<main
+    class="timeline-wrapper"
+    id="timeline"
+>
+
+    <div class="container timeline-container">
+
+
+        <!-- GOLD LINE -->
+
+        <div
+            class="timeline-line-track"
+            aria-hidden="true"
+        ></div>
+
+        <div
+            class="timeline-line"
+            aria-hidden="true"
+        ></div>
+
+
+        <!-- =================================================
+             01 — 1857
+        ================================================== -->
+
+        <article
+            class="timeline-event"
+            data-category="resistance"
+            data-year="1857"
+        >
+
+            <div class="timeline-marker">
+                <span>01</span>
+            </div>
+
+            <div class="timeline-year-large">
+                1857
+            </div>
+
+            <div class="timeline-event-grid">
+
+                <div class="timeline-image-side">
+
+                    <div class="timeline-image-wrap">
+
+                        <div class="image-frame"></div>
+
+                        <img
+                            src="../IMAGES/timeline-1857.jpg"
+                            class="timeline-image"
+                            alt="Revolt of 1857"
+                            loading="lazy"
+                        >
+
+                        <span class="image-caption">
+                            THE FIRST GREAT UPRISING
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-content">
+
+                    <span class="event-category">
+                        EARLY RESISTANCE
+                    </span>
+
+                    <h2>
+                        The Revolt of 1857
+                    </h2>
+
+                    <p class="event-lead">
+                        A major uprising against British
+                        East India Company rule erupted
+                        across northern and central India.
+                    </p>
+
+                    <p>
+                        The revolt began among Indian
+                        soldiers in the East India Company's
+                        army and quickly spread to several
+                        regions.
+                    </p>
+
+                    <div class="event-people">
+
+                        <span>Rani Lakshmibai</span>
+                        <span>Bahadur Shah Zafar</span>
+                        <span>Nana Sahib</span>
+                        <span>Tantia Tope</span>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="story-button"
+                        data-event="1857"
+                    >
+                        <span>
+                            Read the full story
+                        </span>
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             02 — 1885
+        ================================================== -->
+
+        <article
+            class="timeline-event reverse"
+            data-category="national"
+            data-year="1885"
+        >
+
+            <div class="timeline-marker">
+                <span>02</span>
+            </div>
+
+            <div class="timeline-year-large">
+                1885
+            </div>
+
+            <div class="timeline-event-grid">
+
+                <div class="timeline-image-side">
+
+                    <div class="timeline-image-wrap">
+
+                        <div class="image-frame"></div>
+
+                        <img
+                            src="../IMAGES/timeline-1885.jpg"
+                            class="timeline-image"
+                            alt="Indian National Congress"
+                            loading="lazy"
+                        >
+
+                        <span class="image-caption">
+                            THE RISE OF ORGANIZED NATIONALISM
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-content">
+
+                    <span class="event-category">
+                        NATIONAL MOVEMENT
+                    </span>
+
+                    <h2>
+                        Birth of the Indian National Congress
+                    </h2>
+
+                    <p class="event-lead">
+                        A national political platform was
+                        created for Indians to express their
+                        political demands.
+                    </p>
+
+                    <p>
+                        Founded in Bombay in 1885, the Indian
+                        National Congress initially focused
+                        on constitutional reform, political
+                        representation and greater Indian
+                        participation in administration.
+                    </p>
+
+                    <div class="event-people">
+
+                        <span>A. O. Hume</span>
+                        <span>Dadabhai Naoroji</span>
+                        <span>W. C. Bonnerjee</span>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="story-button"
+                        data-event="1885"
+                    >
+                        <span>
+                            Read the full story
+                        </span>
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             03 — 1905
+        ================================================== -->
+
+        <article
+            class="timeline-event"
+            data-category="national"
+            data-year="1905"
+        >
+
+            <div class="timeline-marker">
+                <span>03</span>
+            </div>
+
+            <div class="timeline-year-large">
+                1905
+            </div>
+
+            <div class="timeline-event-grid">
+
+                <div class="timeline-image-side">
+
+                    <div class="timeline-image-wrap">
+
+                        <div class="image-frame"></div>
+
+                        <img
+                            src="../IMAGES/timeline-1905.webp"
+                            class="timeline-image"
+                            alt="Swadeshi Movement"
+                            loading="lazy"
+                        >
+
+                        <span class="image-caption">
+                            SWADESHI &amp; SELF-RELIANCE
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-content">
+
+                    <span class="event-category">
+                        NATIONAL MOVEMENT
+                    </span>
+
+                    <h2>
+                        Partition of Bengal
+                    </h2>
+
+                    <p class="event-lead">
+                        The partition of Bengal triggered
+                        widespread protests and gave rise
+                        to the Swadeshi Movement.
+                    </p>
+
+                    <p>
+                        Indians boycotted British goods,
+                        promoted Indian-made products and
+                        encouraged national education and
+                        economic self-reliance.
+                    </p>
+
+                    <div class="event-people">
+
+                        <span>Bal Gangadhar Tilak</span>
+                        <span>Bipin Chandra Pal</span>
+                        <span>Lala Lajpat Rai</span>
+                        <span>Aurobindo Ghose</span>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="story-button"
+                        data-event="1905"
+                    >
+                        <span>
+                            Read the full story
+                        </span>
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             04 — 1915
+        ================================================== -->
+
+        <article
+            class="timeline-event reverse"
+            data-category="mass"
+            data-year="1915"
+        >
+
+            <div class="timeline-marker">
+                <span>04</span>
+            </div>
+
+            <div class="timeline-year-large">
+                1915
+            </div>
+
+            <div class="timeline-event-grid">
+
+                <div class="timeline-image-side">
+
+                    <div class="timeline-image-wrap">
+
+                        <div class="image-frame"></div>
+
+                        <img
+                            src="../images/timeline-1915-1.jpg"
+                            class="timeline-image"
+                            alt="Gandhi returns to India"
+                            loading="lazy"
+                        >
+
+                        <span class="image-caption">
+                            A NEW ERA OF LEADERSHIP
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-content">
+
+                    <span class="event-category">
+                        MASS MOVEMENT
+                    </span>
+
+                    <h2>
+                        Gandhi Returns to India
+                    </h2>
+
+                    <p class="event-lead">
+                        After years of activism in South
+                        Africa, Mahatma Gandhi returned
+                        to India.
+                    </p>
+
+                    <p>
+                        His experience with Satyagraha
+                        and non-violent resistance in
+                        South Africa shaped his approach
+                        to India's freedom movement.
+                    </p>
+
+                    <div class="event-people">
+
+                        <span>Mahatma Gandhi</span>
+                        <span>Raj Kumar Shukla</span>
+                        <span>Vallabhbhai Patel</span>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="story-button"
+                        data-event="1915"
+                    >
+                        <span>
+                            Read the full story
+                        </span>
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             05 — 1919
+        ================================================== -->
+
+        <article
+            class="timeline-event"
+            data-category="political"
+            data-year="1919"
+        >
+
+            <div class="timeline-marker">
+                <span>05</span>
+            </div>
+
+            <div class="timeline-year-large">
+                1919
+            </div>
+
+            <div class="timeline-event-grid">
+
+                <div class="timeline-image-side">
+
+                    <div class="timeline-image-wrap">
+
+                        <div class="image-frame"></div>
+
+                        <img
+                            src="../IMAGES/timeline-1919.jpg"
+                            class="timeline-image"
+                            alt="Jallianwala Bagh"
+                            loading="lazy"
+                        >
+
+                        <span class="image-caption">
+                            A TURNING POINT
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-content">
+
+                    <span class="event-category">
+                        TURNING POINT
+                    </span>
+
+                    <h2>
+                        Jallianwala Bagh
+                    </h2>
+
+                    <p class="event-lead">
+                        On 13 April 1919, British troops
+                        opened fire on a gathering at
+                        Jallianwala Bagh in Amritsar.
+                    </p>
+
+                    <p>
+                        The massacre shocked the country
+                        and generated widespread anger
+                        against British rule.
+                    </p>
+
+                    <div class="event-people">
+
+                        <span>Mahatma Gandhi</span>
+                        <span>Reginald Dyer</span>
+                        <span>Rabindranath Tagore</span>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="story-button"
+                        data-event="1919"
+                    >
+                        <span>
+                            Read the full story
+                        </span>
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             06 — 1920
+        ================================================== -->
+
+        <article
+            class="timeline-event reverse"
+            data-category="mass"
+            data-year="1920"
+        >
+
+            <div class="timeline-marker">
+                <span>06</span>
+            </div>
+
+            <div class="timeline-year-large">
+                1920
+            </div>
+
+            <div class="timeline-event-grid">
+
+                <div class="timeline-image-side">
+
+                    <div class="timeline-image-wrap">
+
+                        <div class="image-frame"></div>
+
+                        <img
+                            src="../images/timeline-1920.jpeg"
+                            class="timeline-image"
+                            alt="Non Cooperation Movement"
+                            loading="lazy"
+                        >
+
+                        <span class="image-caption">
+                            MASS NON-COOPERATION
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-content">
+
+                    <span class="event-category">
+                        MASS MOVEMENT
+                    </span>
+
+                    <h2>
+                        Non-Cooperation Movement
+                    </h2>
+
+                    <p class="event-lead">
+                        Gandhi encouraged Indians to withdraw
+                        cooperation from British institutions.
+                    </p>
+
+                    <p>
+                        People boycotted government schools,
+                        colleges, courts, titles and British
+                        goods. The movement brought millions
+                        into active participation.
+                    </p>
+
+                    <div class="event-people">
+
+                        <span>Mahatma Gandhi</span>
+                        <span>Ali Brothers</span>
+                        <span>C. R. Das</span>
+                        <span>Motilal Nehru</span>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="story-button"
+                        data-event="1920"
+                    >
+                        <span>
+                            Read the full story
+                        </span>
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             07 — 1930
+        ================================================== -->
+
+        <article
+            class="timeline-event"
+            data-category="mass"
+            data-year="1930"
+        >
+
+            <div class="timeline-marker">
+                <span>07</span>
+            </div>
+
+            <div class="timeline-year-large">
+                1930
+            </div>
+
+            <div class="timeline-event-grid">
+
+                <div class="timeline-image-side">
+
+                    <div class="timeline-image-wrap">
+
+                        <div class="image-frame"></div>
+
+                        <img
+                            src="../images/dandi-march-1.jpeg"
+                            class="timeline-image"
+                            alt="Dandi March"
+                            loading="lazy"
+                        >
+
+                        <span class="image-caption">
+                            THE SALT MARCH
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-content">
+
+                    <span class="event-category">
+                        MASS MOVEMENT
+                    </span>
+
+                    <h2>
+                        Dandi March
+                    </h2>
+
+                    <p class="event-lead">
+                        Gandhi's Salt March became one of
+                        the most recognizable acts of
+                        civil disobedience.
+                    </p>
+
+                    <p>
+                        Beginning on 12 March 1930, Gandhi
+                        marched from Sabarmati Ashram to
+                        Dandi. On 6 April he broke the
+                        salt law by producing salt.
+                    </p>
+
+                    <div class="event-people">
+
+                        <span>Mahatma Gandhi</span>
+                        <span>Sarojini Naidu</span>
+                        <span>Abbas Tyabji</span>
+                        <span>C. Rajagopalachari</span>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="story-button"
+                        data-event="1930"
+                    >
+                        <span>
+                            Read the full story
+                        </span>
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             08 — 1931
+        ================================================== -->
+
+        <article
+            class="timeline-event reverse"
+            data-category="political"
+            data-year="1931"
+        >
+
+            <div class="timeline-marker">
+                <span>08</span>
+            </div>
+
+            <div class="timeline-year-large">
+                1931
+            </div>
+
+            <div class="timeline-event-grid">
+
+                <div class="timeline-image-side">
+
+                    <div class="timeline-image-wrap">
+
+                        <div class="image-frame"></div>
+
+                        <img
+                            src="../images/timeline-1931-1.jpg"
+                            class="timeline-image"
+                            alt="Gandhi Irwin Pact"
+                            loading="lazy"
+                        >
+
+                        <span class="image-caption">
+                            NEGOTIATION &amp; POLITICS
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-content">
+
+                    <span class="event-category">
+                        POLITICAL NEGOTIATION
+                    </span>
+
+                    <h2>
+                        Gandhi-Irwin Pact
+                    </h2>
+
+                    <p class="event-lead">
+                        Gandhi and Viceroy Lord Irwin
+                        entered negotiations during
+                        a crucial period of the movement.
+                    </p>
+
+                    <p>
+                        The agreement included the release
+                        of many political prisoners and
+                        temporarily ended the Civil
+                        Disobedience Movement.
+                    </p>
+
+                    <div class="event-people">
+
+                        <span>Mahatma Gandhi</span>
+                        <span>Lord Irwin</span>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="story-button"
+                        data-event="1931"
+                    >
+                        <span>
+                            Read the full story
+                        </span>
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             09 — 1935
+        ================================================== -->
+
+        <article
+            class="timeline-event"
+            data-category="political"
+            data-year="1935"
+        >
+
+            <div class="timeline-marker">
+                <span>09</span>
+            </div>
+
+            <div class="timeline-year-large">
+                1935
+            </div>
+
+            <div class="timeline-event-grid">
+
+                <div class="timeline-image-side">
+
+                    <div class="timeline-image-wrap">
+
+                        <div class="image-frame"></div>
+
+                        <img
+                            src="../IMAGES/timeline-1935-1.jpg"
+                            class="timeline-image"
+                            alt="Government of India Act"
+                            loading="lazy"
+                        >
+
+                        <span class="image-caption">
+                            CONSTITUTIONAL CHANGE
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-content">
+
+                    <span class="event-category">
+                        CONSTITUTIONAL DEVELOPMENT
+                    </span>
+
+                    <h2>
+                        Government of India Act
+                    </h2>
+
+                    <p class="event-lead">
+                        A major constitutional reform
+                        introduced expanded provincial
+                        autonomy.
+                    </p>
+
+                    <p>
+                        The Act created provincial
+                        legislatures with increased powers.
+                        Indian political parties later
+                        participated in provincial elections
+                        in 1937.
+                    </p>
+
+                    <div class="event-people">
+
+                        <span>Indian National Congress</span>
+                        <span>British Government</span>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="story-button"
+                        data-event="1935"
+                    >
+                        <span>
+                            Read the full story
+                        </span>
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             10 — 1942
+        ================================================== -->
+
+        <article
+            class="timeline-event reverse"
+            data-category="mass"
+            data-year="1942"
+        >
+
+            <div class="timeline-marker">
+                <span>10</span>
+            </div>
+
+            <div class="timeline-year-large">
+                1942
+            </div>
+
+            <div class="timeline-event-grid">
+
+                <div class="timeline-image-side">
+
+                    <div class="timeline-image-wrap">
+
+                        <div class="image-frame"></div>
+
+                        <img
+                            src="../IMAGES/timeline-1942.avif"
+                            class="timeline-image"
+                            alt="Quit India Movement"
+                            loading="lazy"
+                        >
+
+                        <span class="image-caption">
+                            DO OR DIE
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-content">
+
+                    <span class="event-category">
+                        MASS MOVEMENT
+                    </span>
+
+                    <h2>
+                        Quit India Movement
+                    </h2>
+
+                    <p class="event-lead">
+                        India demanded an immediate end
+                        to British rule in August 1942.
+                    </p>
+
+                    <p>
+                        Gandhi called for the British to
+                        leave India. Major leaders were
+                        arrested, but protests, strikes and
+                        underground resistance continued.
+                    </p>
+
+                    <div class="quote-inline">
+                        “Do or Die.”
+                    </div>
+
+                    <div class="event-people">
+
+                        <span>Mahatma Gandhi</span>
+                        <span>Jawaharlal Nehru</span>
+                        <span>Aruna Asaf Ali</span>
+                        <span>Usha Mehta</span>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="story-button"
+                        data-event="1942"
+                    >
+                        <span>
+                            Read the full story
+                        </span>
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             11 — 1945–46
+        ================================================== -->
+
+        <article
+            class="timeline-event"
+            data-category="final"
+            data-year="1945"
+        >
+
+            <div class="timeline-marker">
+                <span>11</span>
+            </div>
+
+            <div class="timeline-year-large">
+                1945–46
+            </div>
+
+            <div class="timeline-event-grid">
+
+                <div class="timeline-image-side">
+
+                    <div class="timeline-image-wrap">
+
+                        <div class="image-frame"></div>
+
+                        <img
+                            src="../IMAGES/timeline-1946.jpeg"
+                            class="timeline-image"
+                            alt="INA Trials"
+                            loading="lazy"
+                        >
+
+                        <span class="image-caption">
+                            THE FINAL YEARS
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-content">
+
+                    <span class="event-category">
+                        FINAL YEARS
+                    </span>
+
+                    <h2>
+                        INA Trials &amp; Naval Uprising
+                    </h2>
+
+                    <p class="event-lead">
+                        The end of World War II brought
+                        new political pressure on British
+                        rule.
+                    </p>
+
+                    <p>
+                        INA officers associated with Subhas
+                        Chandra Bose were tried at the Red
+                        Fort. Public sympathy for the INA
+                        spread widely.
+                    </p>
+
+                    <p>
+                        In 1946, unrest among Royal Indian
+                        Navy ratings spread from Bombay
+                        to other locations.
+                    </p>
+
+                    <div class="event-people">
+
+                        <span>Subhas Chandra Bose</span>
+                        <span>Shah Nawaz Khan</span>
+                        <span>Prem Kumar Sahgal</span>
+                        <span>Gurbaksh Singh Dhillon</span>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="story-button"
+                        data-event="1945"
+                    >
+                        <span>
+                            Read the full story
+                        </span>
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             12 — 1947
+        ================================================== -->
+
+        <article
+            class="timeline-event reverse final-event"
+            data-category="final"
+            data-year="1947"
+        >
+
+            <div class="timeline-marker final-marker">
+
+                <i class="bi bi-stars"></i>
+
+            </div>
+
+            <div class="timeline-year-large">
+                1947
+            </div>
+
+            <div class="timeline-event-grid">
+
+                <div class="timeline-image-side">
+
+                    <div class="timeline-image-wrap">
+
+                        <div class="image-frame"></div>
+
+                        <img
+                            src="../images/timeline-1947.jpeg"
+                            class="timeline-image"
+                            alt="Indian Independence"
+                            loading="lazy"
+                        >
+
+                        <span class="image-caption">
+                            15 AUGUST 1947
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-content">
+
+                    <span class="event-category">
+                        FREEDOM
+                    </span>
+
+                    <h2>
+                        Independence
+                    </h2>
+
+                    <p class="event-lead">
+                        After decades of struggle, India
+                        became an independent nation on
+                        15 August 1947.
+                    </p>
+
+                    <p>
+                        The Indian Independence Act created
+                        the independent dominions of India
+                        and Pakistan.
+                    </p>
+
+                    <p>
+                        At midnight between 14 and 15 August,
+                        Jawaharlal Nehru delivered his famous
+                        <strong>Tryst with Destiny</strong>
+                        speech.
+                    </p>
+
+                    <div class="event-people">
+
+                        <span>Jawaharlal Nehru</span>
+                        <span>Mahatma Gandhi</span>
+                        <span>Sardar Patel</span>
+                        <span>Dr. B. R. Ambedkar</span>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="story-button"
+                        data-event="1947"
+                    >
+                        <span>
+                            Read the full story
+                        </span>
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</main>
+
+
+<!-- =========================================================
+     FINALE
+========================================================= -->
+
+<section class="freedom-finale">
+
+    <div class="container">
+
+        <div class="finale-content">
+
+            <span class="section-kicker">
+                15 AUGUST 1947
+            </span>
+
+            <div class="finale-year">
+                1947
+            </div>
+
+            <h2>
+
+                The struggle
+
+                <span>
+                    became freedom.
+                </span>
+
+            </h2>
+
+            <div
+                class="finale-line"
+                aria-hidden="true"
+            ></div>
+
+            <blockquote>
+                “At the stroke of the midnight hour,
+                when the world sleeps, India will awake
+                to life and freedom.”
+            </blockquote>
+
+            <cite>
+                — Jawaharlal Nehru, Tryst with Destiny
+            </cite>
+
+            <p>
+
+                India's independence was shaped by
+                generations of resistance, political
+                movements, sacrifices, negotiations,
+                and mass participation.
+
+                <br><br>
+
+                The story did not end in 1947.
+
+                <strong>
+                    Freedom became a responsibility
+                    to carry forward.
+                </strong>
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     NEXT CHAPTER
+========================================================= -->
+
+<section class="next-chapter">
+
+    <div class="container">
+
+        <div class="next-grid">
+
+            <a
+                href="heroes.html"
+                class="next-card"
+            >
+
+                <span>
+                    CONTINUE THE STORY
+                </span>
+
+                <h3>
+                    Meet the Heroes
+                </h3>
+
+                <p>
+                    Discover the people behind
+                    India's freedom struggle.
+                </p>
+
+                <i class="bi bi-arrow-up-right"></i>
+
+            </a>
+
+
+            <a
+                href="achievements.html"
+                class="next-card"
+            >
+
+                <span>
+                    AFTER 1947
+                </span>
+
+                <h3>
+                    India's Journey Forward
+                </h3>
+
+                <p>
+                    Explore what India built
+                    after independence.
+                </p>
+
+                <i class="bi bi-arrow-up-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="timeline-footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+
+            <div class="footer-brand">
+
+                <a
+                    href="home.html"
+                    class="footer-logo"
+                >
+
+                    <i class="bi bi-flag-fill"></i>
+
+                    <span>
+                        VIDUTHALAI
+                    </span>
+
+                </a>
+
+                <p>
+                    Remembering India's journey to freedom,
+                    honoring those who shaped it, and
+                    carrying the story forward.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Explore
+                </h4>
+
+                <a href="home.html">
+                    Home
+                </a>
+
+                <a href="heroes.html">
+                    Heroes
+                </a>
+
+                <a href="timeline.html">
+                    Timeline
+                </a>
+
+                <a href="leaders.html">
+                    Leaders
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Discover
+                </h4>
+
+                <a href="achievements.html">
+                    Achievements
+                </a>
+
+                <a href="heroes.html">
+                    Freedom Fighters
+                </a>
+
+                <a href="auth.html">
+                    Account
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Remember
+                </h4>
+
+                <p class="footer-quote">
+                    The freedom we inherit
+                    is a story worth remembering.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                ©
+                <span id="currentYear"></span>
+                Viduthalai
+            </span>
+
+            <span>
+                Built with respect and remembrance.
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="../JAVASCRIPT/timeline.js"></script>
+
+</body>
+
+</html>

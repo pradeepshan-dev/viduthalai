@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Viduthalai — Prime Ministers of India. Explore the leaders who shaped India's journey after independence."
+    >
+
+    <title>Leaders | Viduthalai</title>
+
+    <!-- GOOGLE FONTS -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- BOOTSTRAP ICONS -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- LEADERS CSS -->
+    <link
+        rel="stylesheet"
+        href="../CSS/leaders.css"
+    >
+
+</head>
+
+
+<body class="no-scroll">
+
+
+<!-- =========================================================
+     PAGE LOADER
+========================================================= -->
+
+<div
+    class="page-loader"
+    id="pageLoader"
+>
+
+    <div class="loader-inner">
+
+        <div class="loader-mark">
+            V
+        </div>
+
+        <div class="loader-brand">
+            VIDUTHALAI
+        </div>
+
+        <div class="loader-line">
+            <span></span>
+        </div>
+
+        <div class="loader-caption">
+            LEADERS OF INDIA
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     CUSTOM CURSOR
+========================================================= -->
+
+<div
+    class="cursor-dot"
+    aria-hidden="true"
+></div>
+
+<div
+    class="cursor-ring"
+    aria-hidden="true"
+></div>
+
+
+<!-- =========================================================
+     NAVBAR
+========================================================= -->
+
+<header
+    class="viduthalai-navbar"
+    id="navbar"
+>
+
+    <div class="navbar-inner">
+
+        <!-- BRAND -->
+
+        <a
+            href="home.html"
+            class="navbar-brand"
+            aria-label="Viduthalai Home"
+        >
+
+            <span class="brand-mark">
+                V
+            </span>
+
+            <span class="brand-content">
+
+                <strong>
+                    VIDUTHALAI
+                </strong>
+
+                <small>
+                    A STORY OF INDIA
+                </small>
+
+            </span>
+
+        </a>
+
+
+        <!-- DESKTOP NAVIGATION -->
+
+        <nav
+            class="desktop-nav"
+            aria-label="Main navigation"
+        >
+
+            <a href="home.html">
+                HOME
+            </a>
+
+            <a href="heros.html">
+                HEROES
+            </a>
+
+            <a href="timeline.html">
+                TIMELINE
+            </a>
+
+            <a href="achievements.html">
+                ACHIEVEMENTS
+            </a>
+
+            <a
+                href="leaders.html"
+                class="active"
+            >
+                LEADERS
+            </a>
+
+        </nav>
+
+
+        <!-- AUTH -->
+
+        <div class="navbar-auth">
+
+            <div
+                class="auth-logged-out"
+                id="authLoggedOut"
+            >
+
+                <a
+                    href="auth.html"
+                    class="auth-login"
+                >
+                    LOGIN
+                </a>
+
+                <a
+                    href="auth.html?mode=signup"
+                    class="auth-signup"
+                >
+                    SIGN UP
+                </a>
+
+            </div>
+
+
+            <div
+                class="auth-logged-in"
+                id="authLoggedIn"
+            >
+
+                <span class="user-profile">
+
+                    <i class="bi bi-person-circle"></i>
+
+                    <span id="navbarUsername">
+                        User
+                    </span>
+
+                </span>
+
+                <button
+                    type="button"
+                    id="logoutButton"
+                    class="logout-button"
+                >
+                    LOGOUT
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- MOBILE BUTTON -->
+
+        <button
+            type="button"
+            class="menu-button"
+            id="mobileMenuButton"
+            aria-label="Open navigation"
+            aria-expanded="false"
+        >
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </div>
+
+
+    <!-- MOBILE NAV -->
+
+    <div
+        class="mobile-nav"
+        id="mobileMenu"
+    >
+
+        <div class="mobile-nav-inner">
+
+            <a href="home.html">
+                HOME
+            </a>
+
+            <a href="heros.html">
+                HEROES
+            </a>
+
+            <a href="timeline.html">
+                TIMELINE
+            </a>
+
+            <a href="achievements.html">
+                ACHIEVEMENTS
+            </a>
+
+            <a
+                href="leaders.html"
+                class="active"
+            >
+                LEADERS
+            </a>
+
+
+            <div class="mobile-auth">
+
+                <div
+                    id="mobileAuthLoggedOut"
+                    class="mobile-auth-out"
+                >
+
+                    <a href="auth.html">
+                        LOGIN
+                    </a>
+
+                    <a href="auth.html?mode=signup">
+                        SIGN UP
+                    </a>
+
+                </div>
+
+
+                <div
+                    id="mobileAuthLoggedIn"
+                    class="mobile-auth-in"
+                >
+
+                    <div class="mobile-user">
+
+                        <i class="bi bi-person-circle"></i>
+
+                        <span id="mobileNavbarUsername">
+                            User
+                        </span>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        id="mobileLogoutButton"
+                    >
+                        LOGOUT
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     MAIN
+========================================================= -->
+
+<main id="mainContent">
+
+
+<!-- =========================================================
+     LEADERS INTRO
+========================================================= -->
+
+<section
+    class="leaders-intro"
+    id="leadersIntro"
+>
+
+    <div class="leaders-intro-background">
+
+        <img
+            src="../IMAGES/Leaders/leaders-bg.png"
+            alt="India"
+            fetchpriority="high"
+        >
+
+    </div>
+
+    <div class="intro-overlay"></div>
+    <div class="intro-grid"></div>
+    <div class="intro-grain"></div>
+
+
+    <div class="intro-content container">
+
+        <div class="intro-top reveal">
+
+            <div class="intro-kicker">
+                THE REPUBLIC
+            </div>
+
+            <div class="intro-index">
+                01 / 15
+            </div>
+
+        </div>
+
+
+        <div class="intro-main reveal">
+
+            <div class="intro-small-title">
+                PRIME MINISTERS OF INDIA
+            </div>
+
+            <h1>
+                The
+                <em>Leaders</em>
+            </h1>
+
+            <p>
+                From the first years of independence to
+                the present era, fifteen Prime Ministers
+                have shaped India's political journey,
+                institutions, policies and place in the world.
+            </p>
+
+
+            <div class="intro-bottom">
+
+                <div class="leader-count">
+
+                    <strong>
+                        15
+                    </strong>
+
+                    <span>
+                        PRIME MINISTERS<br>
+                        OF INDIA
+                    </span>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="intro-scroll"
+                    data-scroll-directory
+                >
+
+                    <span>
+                        EXPLORE THE ARCHIVE
+                    </span>
+
+                    <i class="bi bi-arrow-down"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="intro-footer">
+
+            <span>
+                1947
+            </span>
+
+            <div></div>
+
+            <span>
+                PRESENT
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     LEADER DIRECTORY
+========================================================= -->
+
+<section
+    class="leader-directory"
+    id="leaderDirectory"
+>
+
+    <div class="container">
+
+        <div class="directory-heading reveal">
+
+            <div>
+
+                <span class="section-label">
+                    THE ARCHIVE
+                </span>
+
+                <h2>
+                    Prime Ministers
+                    <em>of India</em>
+                </h2>
+
+            </div>
+
+
+            <div class="directory-description">
+
+                <p>
+                    Explore the leaders who have guided
+                    India from Jawaharlal Nehru in 1947
+                    to the present era.
+                </p>
+
+                <span>
+                    15 RECORDS · 1947 — PRESENT
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- JS CREATES ALL 15 LEADERS HERE -->
+
+        <div
+            class="leaders-list"
+            id="leadersList"
+        ></div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     INDIVIDUAL LEADER DETAIL
+========================================================= -->
+
+<section
+    class="leader-detail"
+    id="leaderDetail"
+    aria-hidden="true"
+>
+
+    <div class="detail-shell">
+
+
+        <!-- =================================================
+             PAGE LEVEL BREADCRUMB
+             NOT PART OF NAVBAR
+        ================================================== -->
+
+        <div class="detail-topbar">
+
+            <div class="detail-topbar-inner container">
+
+                <button
+                    type="button"
+                    id="detailBack"
+                    class="detail-back"
+                    aria-label="Back to leaders archive"
+                >
+
+                    <i class="bi bi-arrow-left"></i>
+
+                    <span>
+                        BACK TO LEADERS
+                    </span>
+
+                </button>
+
+
+                <span
+                    class="detail-record"
+                    id="detailRecord"
+                >
+                    LEADERS / PROFILE 01
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             LEADER HERO
+        ================================================== -->
+
+        <div class="detail-hero container">
+
+
+            <!-- PORTRAIT -->
+
+            <div class="detail-portrait">
+
+                <div class="portrait-frame">
+
+                    <img
+                        id="detailBackground"
+                        src=""
+                        alt=""
+                    >
+
+                    <div class="portrait-shine"></div>
+
+                    <span class="portrait-number">
+
+                        <small>
+                            PM
+                        </small>
+
+                        <strong id="detailNumber">
+                            01
+                        </strong>
+
+                    </span>
+
+                </div>
+
+
+                <div class="portrait-caption">
+
+                    <span>
+                        VIDUTHALAI · LEADERS
+                    </span>
+
+                    <span id="detailSideYear">
+                        1947
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- LEADER INTRO -->
+
+            <div class="detail-intro">
+
+                <div class="detail-meta">
+
+                    <span id="detailTerm">
+                        1947 — 1964
+                    </span>
+
+                    <span>
+                        PRIME MINISTER OF INDIA
+                    </span>
+
+                </div>
+
+
+                <h1 id="detailName">
+                    Jawaharlal Nehru
+                </h1>
+
+
+                <p
+                    class="detail-role"
+                    id="detailRole"
+                >
+                    India's first Prime Minister who helped
+                    build the institutional foundations of
+                    modern India.
+                </p>
+
+
+                <div class="detail-rule"></div>
+
+
+                <span class="detail-era">
+                    LEADER PROFILE
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             DETAIL CONTENT
+        ================================================== -->
+
+        <div class="detail-body container">
+
+
+            <!-- LEAD -->
+
+            <div class="detail-lead-block reveal">
+
+                <span class="section-label">
+                    THE RECORD
+                </span>
+
+                <p id="detailDescription">
+                    Nehru became India's first Prime Minister
+                    on 15 August 1947, taking charge of a newly
+                    independent nation still reeling from the
+                    trauma of Partition.
+                </p>
+
+            </div>
+
+
+            <!-- FACTS -->
+
+            <div class="detail-facts reveal">
+
+                <div class="detail-fact">
+
+                    <span>
+                        01
+                    </span>
+
+                    <small>
+                        BORN
+                    </small>
+
+                    <strong id="detailBorn">
+                        14 NOVEMBER 1889
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-fact">
+
+                    <span>
+                        02
+                    </span>
+
+                    <small>
+                        BIRTHPLACE
+                    </small>
+
+                    <strong id="detailBirthplace">
+                        ALLAHABAD
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-fact">
+
+                    <span>
+                        03
+                    </span>
+
+                    <small>
+                        DIED
+                    </small>
+
+                    <strong id="detailDied">
+                        27 MAY 1964 · IN OFFICE
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-fact">
+
+                    <span>
+                        04
+                    </span>
+
+                    <small>
+                        TERM
+                    </small>
+
+                    <strong id="detailTermFact">
+                        1947 — 1964
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTRIBUTION -->
+
+            <div class="contribution-panel reveal">
+
+                <div>
+
+                    <span>
+                        DEFINING CONTRIBUTION
+                    </span>
+
+                    <h3 id="detailContribution">
+                        NATION BUILDING
+                    </h3>
+
+                </div>
+
+                <i class="bi bi-arrow-up-right"></i>
+
+            </div>
+
+
+            <!-- DYNAMIC STORY -->
+
+            <section
+                id="detailMoreInformation"
+                class="leader-more-information"
+            ></section>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="professional-footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+                    VIDUTHALAI
+                </div>
+
+                <p>
+                    A cinematic archive preserving
+                    India's journey through freedom,
+                    leadership and nation building.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <span>
+                    EXPLORE
+                </span>
+
+                <a href="home.html">
+                    Home
+                </a>
+
+                <a href="heroes.html">
+                    Heroes
+                </a>
+
+                <a href="timeline.html">
+                    Timeline
+                </a>
+
+                <a href="achievements.html">
+                    Achievements
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <span>
+                    ARCHIVE
+                </span>
+
+                <a href="leaders.html">
+                    Leaders
+                </a>
+
+                <a href="timeline.html">
+                    Freedom Timeline
+                </a>
+
+                <a href="heroes.html">
+                    Freedom Heroes
+                </a>
+
+            </div>
+
+
+            <div class="footer-quote">
+
+                <i>
+                    “A nation remembers
+                    through its stories.”
+                </i>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                ©
+                <span id="currentYear"></span>
+                VIDUTHALAI
+            </span>
+
+            <span>
+                PRESERVING THE MEMORY OF INDIA
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="../JAVASCRIPT/leaders.js"></script>
+
+</body>
+
+</html>

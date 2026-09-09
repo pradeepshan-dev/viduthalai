@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Viduthalai — Discover the people who shaped India's journey to freedom."
+    >
+
+    <title>Heroes | Viduthalai</title>
+
+
+    <!-- =====================================================
+         BOOTSTRAP
+    ====================================================== -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         BOOTSTRAP ICONS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         HERO CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="../CSS/hero.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         PAGE LOADER
+    ====================================================== -->
+
+    <div class="page-loader">
+
+        <div class="loader-logo">
+
+            <span class="loader-symbol">
+                <i class="bi bi-flag-fill"></i>
+            </span>
+
+            <span>VIDUTHALAI</span>
+
+        </div>
+
+
+        <div class="loader-line">
+            <span></span>
+        </div>
+
+
+        <small>
+            THE HEROES OF FREEDOM
+        </small>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         CUSTOM CURSOR
+    ====================================================== -->
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+  
+<!-- =========================================================
+     NAVBAR
+========================================================== -->
+
+<nav class="viduthalai-navbar">
+
+    <div class="nav-inner">
+
+
+        <!-- BRAND -->
+
+        <a
+            href="home.html"
+            class="brand"
+        >
+
+            <span class="brand-symbol">
+                <i class="bi bi-flag-fill"></i>
+            </span>
+
+            <span class="brand-name">
+                VIDUTHALAI
+            </span>
+
+        </a>
+
+
+        <!-- DESKTOP NAV -->
+
+        <div class="desktop-navigation">
+
+            <a
+                href="home.html"
+                class="nav-link"
+            >
+                Home
+            </a>
+
+            <a
+                href="heroes.html"
+                class="nav-link active"
+            >
+                Heroes
+            </a>
+
+            <a
+                href="timeline.html"
+                class="nav-link"
+            >
+                Timeline
+            </a>
+
+            <a
+                href="achievements.html"
+                class="nav-link"
+            >
+                Achievements
+            </a>
+
+            <a
+                href="leaders.html"
+                class="nav-link"
+            >
+                Leaders
+            </a>
+
+        </div>
+
+
+        <!-- =====================================================
+             ACCOUNT / AUTHENTICATION
+        ====================================================== -->
+
+        <div
+            class="navbar-auth"
+            id="navbarAuth"
+        >
+
+            <!-- LOGGED OUT -->
+
+            <div
+                class="auth-logged-out"
+                id="authLoggedOut"
+            >
+
+                <a
+                    href="auth.html"
+                    class="auth-login"
+                >
+                    Login
+                </a>
+
+                <a
+                    href="auth.html"
+                    class="auth-signup"
+                >
+                    Sign Up
+                </a>
+
+            </div>
+
+
+            <!-- LOGGED IN -->
+
+            <div
+                class="auth-logged-in"
+                id="authLoggedIn"
+            >
+
+                <span class="user-display">
+
+                    <i class="bi bi-person-circle"></i>
+
+                    <span id="navbarUsername">
+                        User
+                    </span>
+
+                </span>
+
+
+                <button
+                    type="button"
+                    class="logout-button"
+                    id="logoutButton"
+                >
+                    Logout
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- MOBILE -->
+
+        <button
+            class="mobile-menu-button"
+            id="mobileMenuButton"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+        >
+
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </div>
+
+
+    <!-- =========================================================
+         MOBILE MENU
+    ========================================================== -->
+
+    <div
+        class="mobile-menu"
+        id="mobileMenu"
+    >
+
+        <a href="home.html">
+            Home
+        </a>
+
+        <a href="heroes.html">
+            Heroes
+        </a>
+
+        <a href="timeline.html">
+            Timeline
+        </a>
+
+        <a href="achievements.html">
+            Achievements
+        </a>
+
+        <a href="leaders.html">
+            Leaders
+        </a>
+
+
+        <!-- MOBILE AUTH -->
+
+        <div
+            class="mobile-auth"
+            id="mobileAuth"
+        >
+
+            <!-- LOGGED OUT -->
+
+            <div
+                class="mobile-auth-logged-out"
+                id="mobileAuthLoggedOut"
+            >
+
+                <a href="auth.html">
+                    Login
+                </a>
+
+                <a href="auth.html">
+                    Sign Up
+                </a>
+
+            </div>
+
+
+            <!-- LOGGED IN -->
+
+            <div
+                class="mobile-auth-logged-in"
+                id="mobileAuthLoggedIn"
+            >
+
+                <div class="mobile-user">
+
+                    <i class="bi bi-person-circle"></i>
+
+                    <span id="mobileNavbarUsername">
+                        User
+                    </span>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    id="mobileLogoutButton"
+                    class="mobile-logout"
+                >
+                    Logout
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
+
+    <!-- =====================================================
+         HEROES PAGE
+    ====================================================== -->
+
+    <main
+        class="heroes-page"
+        id="heroesPage"
+    >
+
+
+        <!-- =================================================
+             HEROES LANDING
+        ================================================== -->
+
+        <section
+            class="heroes-intro"
+            id="heroesIntro"
+        >
+
+            <!-- Background -->
+
+            <div class="heroes-intro-background">
+
+                <img
+                    src="../IMAGES/hero-img.jpeg"
+                    alt=""
+                >
+
+            </div>
+
+
+            <div class="heroes-intro-overlay"></div>
+
+
+            <div class="heroes-grain"></div>
+
+
+            <div class="heroes-glow"></div>
+
+
+
+            <!-- CONTENT -->
+
+            <div class="container heroes-container">
+
+                <div class="heroes-heading reveal">
+
+                    <div class="hero-kicker">
+
+                        <span></span>
+
+                        INDIA
+                        <b>•</b>
+                        1857
+                        <b>•</b>
+                        1947
+
+                    </div>
+
+
+                    <span class="hero-small-title">
+                        THE PEOPLE BEHIND THE STRUGGLE
+                    </span>
+
+
+                    <h1>
+
+                        The faces
+
+                        <em>
+                            behind freedom.
+                        </em>
+
+                    </h1>
+
+
+                    <p>
+
+                        They came from different places,
+                        different backgrounds and different
+                        generations.
+
+                        But their courage became part of
+                        India's story.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- HERO COUNT -->
+
+                <div class="hero-page-count reveal">
+
+                    <strong>
+                        12+
+                    </strong>
+
+                    <span>
+                        REMARKABLE<br>
+                        HEROES
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- SCROLL -->
+
+            <div class="heroes-scroll">
+
+                <span>
+                    MEET THE HEROES
+                </span>
+
+                <i class="bi bi-arrow-down"></i>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             HERO DIRECTORY
+        ================================================== -->
+
+        <section
+            class="hero-directory"
+            id="heroDirectory"
+        >
+
+            <div class="container">
+
+
+                <div class="directory-heading reveal">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            THE ARCHIVE
+                        </span>
+
+                        <h2>
+
+                            Remember
+
+                            <em>
+                                their names.
+                            </em>
+
+                        </h2>
+
+                    </div>
+
+
+                    <p>
+
+                        Select a hero to explore
+                        their life, ideas, sacrifice
+                        and place in India's freedom
+                        struggle.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     HERO GRID
+                ================================================== -->
+
+                <div
+                    class="heroes-list"
+                    id="heroesList"
+                >
+
+
+                    <!-- GANDHI -->
+
+                    <article
+                        class="hero-profile-card reveal"
+                        data-hero="gandhi"
+                    >
+
+                        <button
+                            class="hero-card-trigger"
+                            type="button"
+                            aria-label="Explore Mahatma Gandhi"
+                        >
+
+                            <div class="profile-image">
+
+                                <img
+                                    src="../IMAGES/gandhiji.jpeg"
+                                    alt="Mahatma Gandhi"
+                                >
+
+                                <div class="profile-image-overlay"></div>
+
+                                <span class="profile-number">
+                                    01
+                                </span>
+
+                                <span class="profile-open">
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </span>
+
+                            </div>
+
+
+                            <div class="profile-info">
+
+                                <span>
+                                    1869 — 1948
+                                </span>
+
+                                <h3>
+                                    Mahatma Gandhi
+                                </h3>
+
+                                <p>
+                                    Leader of mass non-violent
+                                    resistance and one of the
+                                    central figures of India's
+                                    independence movement.
+                                </p>
+
+                                <div class="profile-link">
+
+                                    Explore story
+
+                                    <i class="bi bi-arrow-right"></i>
+
+                                </div>
+
+                            </div>
+
+                        </button>
+
+                    </article>
+
+
+
+                    <!-- BHAGAT SINGH -->
+
+                    <article
+                        class="hero-profile-card reveal"
+                        data-hero="bhagat"
+                    >
+
+                        <button
+                            class="hero-card-trigger"
+                            type="button"
+                            aria-label="Explore Bhagat Singh"
+                        >
+
+                            <div class="profile-image">
+
+                                <img
+                                    src="../IMAGES/bhagatsingh.jpeg"
+                                    alt="Bhagat Singh"
+                                >
+
+                                <div class="profile-image-overlay"></div>
+
+                                <span class="profile-number">
+                                    02
+                                </span>
+
+                                <span class="profile-open">
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </span>
+
+                            </div>
+
+
+                            <div class="profile-info">
+
+                                <span>
+                                    1907 — 1931
+                                </span>
+
+                                <h3>
+                                    Bhagat Singh
+                                </h3>
+
+                                <p>
+                                    Revolutionary whose ideas,
+                                    courage and sacrifice made
+                                    him an enduring symbol of
+                                    resistance.
+                                </p>
+
+                                <div class="profile-link">
+
+                                    Explore story
+
+                                    <i class="bi bi-arrow-right"></i>
+
+                                </div>
+
+                            </div>
+
+                        </button>
+
+                    </article>
+
+
+
+                    <!-- SUBHAS BOSE -->
+
+                    <article
+                        class="hero-profile-card reveal"
+                        data-hero="bose"
+                    >
+
+                        <button
+                            class="hero-card-trigger"
+                            type="button"
+                            aria-label="Explore Subhas Chandra Bose"
+                        >
+
+                            <div class="profile-image">
+
+                                <img
+                                    src="../IMAGES/subashchandrabose.jpg"
+                                    alt="Subhas Chandra Bose"
+                                >
+
+                                <div class="profile-image-overlay"></div>
+
+                                <span class="profile-number">
+                                    03
+                                </span>
+
+                                <span class="profile-open">
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </span>
+
+                            </div>
+
+
+                            <div class="profile-info">
+
+                                <span>
+                                    1897 — 1945
+                                </span>
+
+                                <h3>
+                                    Subhas Chandra Bose
+                                </h3>
+
+                                <p>
+                                    Nationalist leader associated
+                                    with the Indian National Army
+                                    and the Azad Hind movement.
+                                </p>
+
+                                <div class="profile-link">
+
+                                    Explore story
+
+                                    <i class="bi bi-arrow-right"></i>
+
+                                </div>
+
+                            </div>
+
+                        </button>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             HERO DETAIL EXPERIENCE
+        ================================================== -->
+
+        <section
+            class="hero-detail"
+            id="heroDetail"
+            aria-hidden="true"
+        >
+
+            <!-- Dynamic background -->
+
+            <div class="detail-background">
+
+                <img
+                    id="detailBackground"
+                    src=""
+                    alt=""
+                >
+
+            </div>
+
+
+            <div class="detail-overlay"></div>
+
+
+            <div class="detail-grain"></div>
+
+
+            <div class="detail-glow"></div>
+
+
+
+            <div class="container detail-container">
+
+
+                <!-- BACK -->
+
+                <button
+                    class="detail-back"
+                    id="detailBack"
+                    type="button"
+                >
+
+                    <i class="bi bi-arrow-left"></i>
+
+                    <span>
+                        Back to heroes
+                    </span>
+
+                </button>
+
+
+
+                <!-- HERO NUMBER -->
+
+                <div
+                    class="detail-number"
+                    id="detailNumber"
+                >
+                    01
+                </div>
+
+
+
+                <!-- CONTENT -->
+
+                <div class="detail-content">
+
+
+                    <div class="detail-meta">
+
+                        <span
+                            id="detailYears"
+                        >
+                            1869 — 1948
+                        </span>
+
+                        <span class="meta-line"></span>
+
+                        <span>
+                            FREEDOM ARCHIVE
+                        </span>
+
+                    </div>
+
+
+
+                    <h2 id="detailName">
+                        Mahatma Gandhi
+                    </h2>
+
+
+
+                    <div class="detail-divider"></div>
+
+
+
+                    <p
+                        class="detail-role"
+                        id="detailRole"
+                    >
+                        Leader of India's mass
+                        non-violent independence movement.
+                    </p>
+
+
+
+                    <p
+                        class="detail-description"
+                        id="detailDescription"
+                    >
+                        Mohandas Karamchand Gandhi became
+                        one of the most influential leaders
+                        of India's struggle for independence.
+                        His philosophy of non-violent resistance
+                        and civil disobedience helped transform
+                        the freedom movement into a mass
+                        national campaign.
+                    </p>
+
+
+
+                    <!-- DETAILS -->
+
+                    <div class="detail-facts">
+
+
+                        <div class="fact">
+
+                            <span>
+                                BORN
+                            </span>
+
+                            <strong id="detailBorn">
+                                02 OCTOBER 1869
+                            </strong>
+
+                        </div>
+
+
+                        <div class="fact">
+
+                            <span>
+                                KNOWN FOR
+                            </span>
+
+                            <strong id="detailKnown">
+                                NON-VIOLENT RESISTANCE
+                            </strong>
+
+                        </div>
+
+
+                        <div class="fact">
+
+                            <span>
+                                LEGACY
+                            </span>
+
+                            <strong id="detailLegacy">
+                                SATYAGRAHA
+                            </strong>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- ACTION -->
+
+                    <a
+                        href="#"
+                        class="detail-action"
+                        id="detailAction"
+                    >
+
+                        Read full story
+
+                        <i class="bi bi-arrow-up-right"></i>
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- SIDE YEAR -->
+
+                <div class="detail-side-year">
+
+                    <span id="detailSideYear">
+                        1869
+                    </span>
+
+                    <small>
+                        TO
+                    </small>
+
+                    <span id="detailSideYearEnd">
+                        1948
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- DETAIL PROGRESS -->
+
+            <div class="detail-progress">
+
+                <span></span>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="professional-footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+
+                <div class="footer-main">
+
+                    <a
+                        href="home.html"
+                        class="footer-brand"
+                    >
+
+                        <i class="bi bi-flag-fill"></i>
+
+                        VIDUTHALAI
+
+                    </a>
+
+
+                    <p>
+
+                        A digital space dedicated to
+                        remembering India's journey to
+                        freedom and honouring the people
+                        who shaped it.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="footer-column">
+
+                    <h4>
+                        Explore
+                    </h4>
+
+                    <a href="home.html">
+                        Home
+                    </a>
+
+                    <a href="heroes.html">
+                        Heroes
+                    </a>
+
+                    <a href="timeline.html">
+                        Timeline
+                    </a>
+
+                    <a href="leaders.html">
+                        Leaders
+                    </a>
+
+                </div>
+
+
+
+                <div class="footer-column">
+
+                    <h4>
+                        Discover
+                    </h4>
+
+                    <a href="achievements.html">
+                        Achievements
+                    </a>
+
+                    <a href="timeline.html">
+                        Freedom Story
+                    </a>
+
+                    <a href="auth.html">
+                        Account
+                    </a>
+
+                </div>
+
+
+
+                <div class="footer-column footer-memory">
+
+                    <h4>
+                        Remember
+                    </h4>
+
+                    <p>
+                        “A nation remembers when its people
+                        choose not to forget.”
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="footer-bottom">
+
+                <span>
+
+                    ©
+                    <span id="currentYear"></span>
+                    Viduthalai
+
+                </span>
+
+                <span>
+                    Built with respect, remembrance and pride.
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="../JAVASCRIPT/hero.js"></script>
+
+
+</body>
+
+</html>

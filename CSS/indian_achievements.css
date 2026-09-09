@@ -1,0 +1,1926 @@
+/* =========================================================
+   VIDUTHALAI
+   INDIAN ACHIEVEMENTS
+   CINEMATIC DETAIL PAGE
+   NO GSAP
+========================================================= */
+
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+
+    --black: #080a0e;
+    --black-soft: #0d1016;
+    --black-card: #11151c;
+    --black-deep: #050609;
+
+    --gold: #d4a94f;
+    --gold-light: #e7c875;
+    --gold-dark: #a98232;
+
+    --cream: #eee8dc;
+    --text: #b8b7b4;
+    --muted: #777a80;
+
+    --border: rgba(212,169,79,.24);
+
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    background: var(--black);
+
+    color: var(--cream);
+
+    font-family:
+        "Poppins",
+        sans-serif;
+
+    overflow-x: hidden;
+
+}
+
+
+body.loaded {
+    overflow-x: hidden;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/* =========================================================
+   SELECTION
+========================================================= */
+
+::selection {
+
+    background: var(--gold);
+
+    color: var(--black);
+
+}
+
+
+/* =========================================================
+   LOADER
+========================================================= */
+
+.achievement-loader {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 99999;
+
+    background: var(--black);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 20px;
+
+    transition:
+        opacity .8s ease,
+        visibility .8s ease;
+
+}
+
+
+.achievement-loader.hide {
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+}
+
+
+.loader-logo {
+
+    font-family:
+        "DM Serif Display",
+        serif;
+
+    font-size: 24px;
+
+    letter-spacing: 6px;
+
+}
+
+
+.loader-line {
+
+    width: 150px;
+
+    height: 1px;
+
+    background: rgba(255,255,255,.12);
+
+    overflow: hidden;
+
+}
+
+
+.loader-line span {
+
+    display: block;
+
+    width: 0;
+
+    height: 100%;
+
+    background: var(--gold);
+
+    animation:
+        loaderProgress 1.3s ease forwards;
+
+}
+
+
+.loader-text {
+
+    color: var(--gold);
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+
+}
+
+
+@keyframes loaderProgress {
+
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.achievement-nav {
+
+    position: fixed;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+
+    height: 78px;
+
+    z-index: 5000;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 5vw;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(8,10,14,.94),
+            rgba(8,10,14,0)
+        );
+
+    transition:
+        background .4s ease;
+
+}
+
+
+.achievement-nav.scrolled {
+
+    background:
+        rgba(8,10,14,.96);
+
+    border-bottom:
+        1px solid rgba(255,255,255,.04);
+
+}
+
+
+.back-link {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color:
+        rgba(238,232,220,.72);
+
+    font-size: 9px;
+
+    letter-spacing: 2.5px;
+
+    transition:
+        color .3s ease;
+
+}
+
+
+.back-link i {
+
+    font-size: 16px;
+
+}
+
+
+.back-link:hover {
+
+    color: var(--gold);
+
+}
+
+
+.nav-brand {
+
+    position: absolute;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-family:
+        "DM Serif Display",
+        serif;
+
+    font-size: 18px;
+
+    letter-spacing: 5px;
+
+}
+
+
+.achievement-counter {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: var(--gold);
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.achievement-counter b {
+
+    color: #555;
+
+    font-weight: 400;
+
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.achievement-hero {
+
+    min-height: 100vh;
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+.hero-image {
+
+    position: absolute;
+
+    inset: 0;
+
+    overflow: hidden;
+
+}
+
+
+.hero-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    filter:
+        grayscale(100%)
+        contrast(.95)
+        brightness(.46);
+
+    transform:
+        scale(1.06);
+
+    animation:
+        heroImageIn 1.8s ease forwards;
+
+}
+
+
+@keyframes heroImageIn {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            scale(1.14);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            scale(1.06);
+
+    }
+
+}
+
+
+/* =========================================================
+   HERO OVERLAY
+========================================================= */
+
+.hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(8,10,14,.99) 0%,
+            rgba(8,10,14,.92) 30%,
+            rgba(8,10,14,.60) 58%,
+            rgba(8,10,14,.48) 78%,
+            rgba(8,10,14,.75) 100%
+        );
+
+}
+
+
+.hero-overlay::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+
+        linear-gradient(
+            to bottom,
+            rgba(8,10,14,.35),
+            transparent 35%,
+            rgba(8,10,14,.78) 100%
+        );
+
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: min(850px, 88%);
+
+    margin-left: 10vw;
+
+    padding-top: 70px;
+
+    animation:
+        heroContentIn 1s .2s ease both;
+
+}
+
+
+@keyframes heroContentIn {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(35px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.achievement-eyebrow {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    color: var(--gold);
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+
+    font-weight: 600;
+
+}
+
+
+.achievement-eyebrow i {
+
+    display: block;
+
+    width: 55px;
+
+    height: 1px;
+
+    background: var(--gold);
+
+}
+
+
+/* =========================================================
+   YEAR
+========================================================= */
+
+.achievement-year {
+
+    margin-top: 48px;
+
+    color: var(--gold-light);
+
+    font-size:
+        clamp(34px, 4vw, 58px);
+
+    font-weight: 600;
+
+    letter-spacing: 5px;
+
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.hero-content h1 {
+
+    max-width: 1000px;
+
+    margin: 14px 0 32px;
+
+    font-family:
+        "DM Serif Display",
+        serif;
+
+    font-size:
+        clamp(60px, 8.5vw, 128px);
+
+    line-height: .92;
+
+    font-weight: 400;
+
+    letter-spacing: -2px;
+
+}
+
+
+/* =========================================================
+   LEAD
+========================================================= */
+
+.achievement-lead {
+
+    max-width: 650px;
+
+    color:
+        rgba(238,232,220,.72);
+
+    font-size:
+        clamp(14px, 1.2vw, 18px);
+
+    line-height: 1.9;
+
+}
+
+
+/* =========================================================
+   BEGIN READING
+========================================================= */
+
+.begin-reading {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 60px;
+
+    color:
+        rgba(238,232,220,.55);
+
+    font-size: 8px;
+
+    letter-spacing: 4px;
+
+}
+
+
+.begin-reading i {
+
+    color: var(--gold);
+
+    animation:
+        readingArrow 1.5s ease infinite;
+
+}
+
+
+@keyframes readingArrow {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(7px);
+    }
+
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.achievement-container {
+
+    width: min(1180px, 88%);
+
+    margin: 0 auto;
+
+    position: relative;
+
+}
+
+
+/* =========================================================
+   SECTION LABEL
+========================================================= */
+
+.section-label {
+
+    display: block;
+
+    color: var(--gold);
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+
+    font-weight: 600;
+
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.achievement-intro {
+
+    position: relative;
+
+    padding: 170px 0;
+
+    background: var(--black-soft);
+
+}
+
+
+.intro-number {
+
+    position: absolute;
+
+    top: 20px;
+
+    left: 0;
+
+    font-family:
+        "DM Serif Display",
+        serif;
+
+    font-size: 180px;
+
+    line-height: 1;
+
+    color:
+        rgba(212,169,79,.055);
+
+}
+
+
+.intro-content {
+
+    position: relative;
+
+    width: min(850px, 100%);
+
+    margin-left: 15%;
+
+}
+
+
+.intro-content h2 {
+
+    margin: 25px 0 35px;
+
+    font-family:
+        "DM Serif Display",
+        serif;
+
+    font-size:
+        clamp(45px, 6vw, 78px);
+
+    font-weight: 400;
+
+    line-height: 1.03;
+
+}
+
+
+.intro-content h2 em {
+
+    color: var(--gold);
+
+    font-style: normal;
+
+}
+
+
+.intro-text {
+
+    max-width: 760px;
+
+    color: var(--text);
+
+    font-size: 17px;
+
+    line-height: 2;
+
+}
+
+
+/* =========================================================
+   STORY
+========================================================= */
+
+.achievement-story {
+
+    padding: 160px 0;
+
+    background: var(--black);
+
+}
+
+
+.story-layout {
+
+    display: grid;
+
+    grid-template-columns: 180px 1fr;
+
+    gap: 80px;
+
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.story-sidebar {
+
+    position: relative;
+
+}
+
+
+.sidebar-inner {
+
+    position: sticky;
+
+    top: 140px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 13px;
+
+}
+
+
+.sidebar-inner span {
+
+    color: var(--gold);
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+}
+
+
+.sidebar-inner strong {
+
+    font-family:
+        "DM Serif Display",
+        serif;
+
+    font-size: 58px;
+
+    line-height: 1;
+
+    font-weight: 400;
+
+}
+
+
+.sidebar-inner small {
+
+    color: var(--muted);
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.sidebar-line {
+
+    width: 45px;
+
+    height: 1px;
+
+    background: var(--gold);
+
+}
+
+
+/* =========================================================
+   STORY TEXT
+========================================================= */
+
+.story-text {
+
+    max-width: 780px;
+
+}
+
+
+.story-text p {
+
+    color: #b7b6b2;
+
+    font-size: 16px;
+
+    line-height: 2.15;
+
+    margin-bottom: 35px;
+
+}
+
+
+.story-text p:first-child {
+
+    font-size: 21px;
+
+    color: var(--cream);
+
+}
+
+
+.story-text strong {
+
+    color: var(--cream);
+
+}
+
+
+.story-text em {
+
+    color: var(--gold-light);
+
+    font-style: normal;
+
+}
+
+
+.story-text blockquote {
+
+    margin: 75px 0;
+
+    padding: 42px 50px;
+
+    border-left:
+        2px solid var(--gold);
+
+    background:
+        rgba(212,169,79,.035);
+
+    font-family:
+        "DM Serif Display",
+        serif;
+
+    font-size:
+        clamp(28px, 3vw, 44px);
+
+    line-height: 1.3;
+
+    color: var(--cream);
+
+}
+
+
+/* =========================================================
+   STORY DIVIDER
+========================================================= */
+
+.story-divider {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 70px 0;
+
+}
+
+
+.story-divider span {
+
+    display: block;
+
+    width: 60px;
+
+    height: 1px;
+
+    background: var(--border);
+
+}
+
+
+.story-divider i {
+
+    color: var(--gold);
+
+    font-size: 8px;
+
+}
+
+
+/* =========================================================
+   FACTS
+========================================================= */
+
+.achievement-facts {
+
+    padding: 150px 0;
+
+    background: var(--black-card);
+
+    border-top:
+        1px solid rgba(255,255,255,.04);
+
+    border-bottom:
+        1px solid rgba(255,255,255,.04);
+
+}
+
+
+.facts-heading {
+
+    max-width: 700px;
+
+    margin-bottom: 70px;
+
+}
+
+
+.facts-heading h2 {
+
+    margin-top: 22px;
+
+    font-family:
+        "DM Serif Display",
+        serif;
+
+    font-size:
+        clamp(45px, 5vw, 70px);
+
+    line-height: 1.05;
+
+    font-weight: 400;
+
+}
+
+
+.facts-heading h2 em {
+
+    color: var(--gold);
+
+    font-style: normal;
+
+}
+
+
+.facts-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.fact-card {
+
+    min-height: 190px;
+
+    padding: 35px;
+
+    border:
+        1px solid rgba(255,255,255,.07);
+
+    background:
+        rgba(255,255,255,.012);
+
+    transition:
+        transform .4s ease,
+        border-color .4s ease,
+        background .4s ease;
+
+}
+
+
+.fact-card:hover {
+
+    transform: translateY(-7px);
+
+    border-color:
+        rgba(212,169,79,.3);
+
+    background:
+        rgba(212,169,79,.035);
+
+}
+
+
+.fact-icon {
+
+    color: var(--gold);
+
+    font-size: 19px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.fact-value {
+
+    display: block;
+
+    font-family:
+        "DM Serif Display",
+        serif;
+
+    font-size: 30px;
+
+    line-height: 1.1;
+
+    color: var(--cream);
+
+}
+
+
+.fact-label {
+
+    display: block;
+
+    margin-top: 10px;
+
+    color: var(--muted);
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================================================
+   SIGNIFICANCE
+========================================================= */
+
+.achievement-significance {
+
+    padding: 160px 0;
+
+    background: var(--black-soft);
+
+}
+
+
+.significance-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 100px;
+
+}
+
+
+.significance-grid h2 {
+
+    margin-top: 25px;
+
+    font-family:
+        "DM Serif Display",
+        serif;
+
+    font-size:
+        clamp(45px, 5vw, 72px);
+
+    line-height: 1.04;
+
+    font-weight: 400;
+
+}
+
+
+.significance-grid h2 em {
+
+    color: var(--gold);
+
+    font-style: normal;
+
+}
+
+
+.significance-grid > div:last-child {
+
+    padding-top: 45px;
+
+}
+
+
+.significance-grid p {
+
+    color: var(--text);
+
+    font-size: 16px;
+
+    line-height: 2;
+
+}
+
+
+/* =========================================================
+   LEGACY
+========================================================= */
+
+.achievement-legacy {
+
+    padding: 170px 0;
+
+    background: var(--black);
+
+    text-align: center;
+
+}
+
+
+.legacy-inner {
+
+    max-width: 850px;
+
+    margin: auto;
+
+}
+
+
+.legacy-inner h2 {
+
+    margin: 25px auto 30px;
+
+    font-family:
+        "DM Serif Display",
+        serif;
+
+    font-size:
+        clamp(48px, 6vw, 82px);
+
+    line-height: 1.03;
+
+    font-weight: 400;
+
+}
+
+
+.legacy-inner p {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    color: var(--text);
+
+    font-size: 15px;
+
+    line-height: 2;
+
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.achievement-navigation {
+
+    padding: 110px 0 80px;
+
+    background: var(--black);
+
+    border-top:
+        1px solid rgba(255,255,255,.07);
+
+}
+
+
+.achievement-nav-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+}
+
+
+.achievement-nav-card {
+
+    position: relative;
+
+    min-height: 220px;
+
+    padding: 45px;
+
+    border:
+        1px solid rgba(255,255,255,.07);
+
+    background:
+        rgba(255,255,255,.012);
+
+    overflow: hidden;
+
+    transition:
+        background .4s ease,
+        border-color .4s ease,
+        transform .4s ease;
+
+}
+
+
+.achievement-nav-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+    width: 2px;
+
+    height: 0;
+
+    background: var(--gold);
+
+    transition:
+        height .4s ease;
+
+}
+
+
+.achievement-nav-card:hover {
+
+    transform: translateY(-6px);
+
+    background:
+        rgba(212,169,79,.045);
+
+    border-color:
+        rgba(212,169,79,.3);
+
+}
+
+
+.achievement-nav-card:hover::before {
+
+    height: 100%;
+
+}
+
+
+.nav-small {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    color: var(--gold);
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+}
+
+
+.nav-small i {
+
+    font-size: 15px;
+
+}
+
+
+.achievement-nav-card strong {
+
+    display: block;
+
+    max-width: 450px;
+
+    margin-top: 35px;
+
+    font-family:
+        "DM Serif Display",
+        serif;
+
+    font-size:
+        clamp(26px, 3vw, 42px);
+
+    line-height: 1.08;
+
+    font-weight: 400;
+
+    color: var(--cream);
+
+    transition:
+        color .3s ease;
+
+}
+
+
+.achievement-nav-card:hover strong {
+
+    color: var(--gold-light);
+
+}
+
+
+.achievement-nav-card.next {
+
+    text-align: right;
+
+}
+
+
+.achievement-nav-card.next .nav-small {
+
+    justify-content: flex-end;
+
+}
+
+
+.achievement-nav-card.disabled {
+
+    opacity: .3;
+
+    cursor: default;
+
+}
+
+
+.achievement-nav-card.disabled:hover {
+
+    transform: none;
+
+    background:
+        rgba(255,255,255,.012);
+
+    border-color:
+        rgba(255,255,255,.07);
+
+}
+
+
+.achievement-nav-card.disabled::before {
+
+    display: none;
+
+}
+
+
+/* =========================================================
+   RETURN
+========================================================= */
+
+.return-achievements {
+
+    display: flex;
+
+    justify-content: center;
+
+    padding-top: 45px;
+
+}
+
+
+.return-achievements a {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: var(--muted);
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    transition: color .3s ease;
+
+}
+
+
+.return-achievements a:hover {
+
+    color: var(--gold);
+
+}
+
+
+.return-achievements i {
+
+    color: var(--gold);
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.achievement-footer {
+
+    padding: 75px 0;
+
+    background: var(--black-deep);
+
+    text-align: center;
+
+}
+
+
+.footer-brand {
+
+    font-family:
+        "DM Serif Display",
+        serif;
+
+    font-size: 22px;
+
+    letter-spacing: 5px;
+
+}
+
+
+.footer-brand i {
+
+    color: var(--gold);
+
+    font-size: 11px;
+
+    margin-right: 5px;
+
+}
+
+
+.achievement-footer p {
+
+    margin: 15px 0 25px;
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+}
+
+
+.achievement-footer > .achievement-container > span {
+
+    color: #555;
+
+    font-size: 9px;
+
+}
+
+
+/* =========================================================
+   REVEAL ANIMATIONS
+   NO GSAP
+========================================================= */
+
+.reveal {
+
+    opacity: 0;
+
+    transform:
+        translateY(45px);
+
+    transition:
+        opacity .9s ease,
+        transform .9s ease;
+
+}
+
+
+.reveal.visible {
+
+    opacity: 1;
+
+    transform:
+        translateY(0);
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .hero-content {
+
+        margin-left: 7vw;
+
+    }
+
+
+    .story-layout {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .story-sidebar {
+
+        display: none;
+
+    }
+
+
+    .significance-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+    }
+
+
+    .significance-grid > div:last-child {
+
+        padding-top: 0;
+
+    }
+
+
+    .facts-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .achievement-nav {
+
+        height: 65px;
+
+        padding: 0 20px;
+
+    }
+
+
+    .nav-brand {
+
+        display: none;
+
+    }
+
+
+    .back-link span {
+
+        display: none;
+
+    }
+
+
+    .achievement-counter {
+
+        font-size: 9px;
+
+    }
+
+
+    .hero-content {
+
+        width:
+            calc(100% - 50px);
+
+        margin-left: 25px;
+
+        padding-top: 40px;
+
+    }
+
+
+    .achievement-eyebrow {
+
+        font-size: 7px;
+
+        letter-spacing: 2.5px;
+
+        gap: 10px;
+
+    }
+
+
+    .achievement-eyebrow i {
+
+        width: 35px;
+
+    }
+
+
+    .achievement-year {
+
+        margin-top: 30px;
+
+        font-size: 34px;
+
+    }
+
+
+    .hero-content h1 {
+
+        font-size: 56px;
+
+        letter-spacing: -1px;
+
+        margin: 15px 0 25px;
+
+    }
+
+
+    .achievement-lead {
+
+        font-size: 13px;
+
+        line-height: 1.8;
+
+    }
+
+
+    .begin-reading {
+
+        margin-top: 45px;
+
+    }
+
+
+    .achievement-intro,
+    .achievement-story,
+    .achievement-facts,
+    .achievement-significance,
+    .achievement-legacy {
+
+        padding: 100px 0;
+
+    }
+
+
+    .achievement-container {
+
+        width: 88%;
+
+    }
+
+
+    .intro-number {
+
+        display: none;
+
+    }
+
+
+    .intro-content {
+
+        margin-left: 0;
+
+    }
+
+
+    .intro-content h2 {
+
+        font-size: 45px;
+
+    }
+
+
+    .intro-text {
+
+        font-size: 15px;
+
+    }
+
+
+    .story-text p {
+
+        font-size: 15px;
+
+        line-height: 2;
+
+    }
+
+
+    .story-text p:first-child {
+
+        font-size: 18px;
+
+    }
+
+
+    .story-text blockquote {
+
+        padding: 25px;
+
+        margin: 50px 0;
+
+        font-size: 28px;
+
+    }
+
+
+    .facts-heading {
+
+        margin-bottom: 50px;
+
+    }
+
+
+    .facts-heading h2 {
+
+        font-size: 45px;
+
+    }
+
+
+    .facts-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .fact-card {
+
+        min-height: 160px;
+
+    }
+
+
+    .significance-grid h2 {
+
+        font-size: 45px;
+
+    }
+
+
+    .legacy-inner h2 {
+
+        font-size: 48px;
+
+    }
+
+
+    .achievement-nav-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .achievement-nav-card {
+
+        min-height: 175px;
+
+        padding: 30px;
+
+    }
+
+
+    .achievement-nav-card.next {
+
+        text-align: left;
+
+    }
+
+
+    .achievement-nav-card.next .nav-small {
+
+        justify-content: space-between;
+
+    }
+
+
+    .achievement-nav-card strong {
+
+        font-size: 29px;
+
+        margin-top: 25px;
+
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .hero-content h1 {
+
+        font-size: 49px;
+
+    }
+
+
+    .achievement-year {
+
+        font-size: 30px;
+
+    }
+
+
+    .intro-content h2,
+    .facts-heading h2,
+    .significance-grid h2,
+    .legacy-inner h2 {
+
+        font-size: 40px;
+
+    }
+
+}
