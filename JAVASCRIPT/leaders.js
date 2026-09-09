@@ -3115,7 +3115,7 @@ initializeCardTilt();
    IMAGE PRELOAD
 ========================================================= */
 
-function preloadimages/() {
+function preloadimages() {
 
     Object.values(leaders)
         .forEach(
@@ -3135,7 +3135,7 @@ function preloadimages/() {
 
 }
 
-preloadimages/();
+preloadimages();
 
 
 /* =========================================================
